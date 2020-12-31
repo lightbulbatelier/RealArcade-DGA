@@ -30,9 +30,7 @@ The RealArcade Games Preservation Project was made possible thanks to Bowlerb, M
 
 ### Contributions
 
-You can contribute to this archive by sending any links to RGS files to astralsoupdesign@icloud.com.
-
-You can also join the official Discord group for uploads and discussions related to the RealArcade Games Preservation Project.
+You can contribute to this archive by sending any links to RGS files to the official Discord group for uploads and discussions related to the RealArcade Games Preservation Project. We are located at https://discord.gg/8CAu3NBbMt
 
 
  
