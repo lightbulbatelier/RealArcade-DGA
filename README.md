@@ -25,7 +25,7 @@ Any legal agreement between the user and the game developer should still be resp
 
 ### Acknowledgements
 
-The RealArcade Games Preservation Project was made possible thanks to Bowlerb, Marli, MatthewH12 and Nicolas Bahamondes. Our voluntary contribution will help on preserving the digital heritage of the self-proclaimed Age of Downloadable Web Games (1998-2008).
+The RealArcade Games Preservation Project was made possible thanks to Bowlerb, Marli, HMVocaloid, MatthewH12 and Nicolas Bahamondes. Our voluntary contribution will help on preserving the digital heritage of the self-proclaimed Age of Downloadable Web Games (1998-2008).
 
 
 ### Contributions
