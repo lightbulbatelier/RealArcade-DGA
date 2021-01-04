@@ -1,0 +1,6 @@
+<?XML version="1.0" ENCODING='UTF-8'?>
+<!DOCTYPE SOFTPKG SYSTEM "http://www.microsoft.com/standards/osd/osd.dtd">
+<?XML::namespace href="http://www.microsoft.com/standards/osd/msicd.dtd" as="MSICD"?>
+<SOFTPKG NAME="Cab2" VERSION="1,0,0,0">
+        <TITLE> Cab2 </TITLE>
+</SOFTPKG>

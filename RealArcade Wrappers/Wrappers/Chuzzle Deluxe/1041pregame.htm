@@ -1,0 +1,334 @@
+<html>
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+
+<style type="text/css">
+	<!--
+	.bullet { font-family: Verdana, Arial, Helvetica; font-size: 14px; color: #006699; font-weight: bold; line-height: 14px; }
+	.bullettext { font-family: Verdana, Arial, Helvetica; font-size: 12px; color: #555555; }
+	.buttontext { font-size: 11px; font-weight: bold; font-family: Verdana, Arial, Helvetica; color: white; cursor:hand; text-decoration: none; }
+	.buttontext:hover { text-decoration: underline; }
+	.bigred { font-size: 26px; color: red; }
+	-->
+</style>
+
+
+<script src="status.js"></script>
+
+<script language="javascript">
+<!--
+
+	var str=(location.href); 
+	var str_prefix = str.lastIndexOf('/') + 1 
+	var str_postfix = str.lastIndexOf('pregame.htm') 
+	var str_langid = str.substring(str_prefix, str_postfix) 
+
+	document.write('\<script src\=\"' + str_langid + 'strings.js\"\>\<\/script\>');
+
+	
+	// the following function delays the firing till the page is loaded to avoid the dreaded error 8000000a in IE4
+	// two seconds should be enough here
+	function WaitTimer(){
+		var browsernumber = parseFloat(navigator.appVersion);
+			setTimeout('UpdateRemaining()', 400);
+	}
+	
+	// NOTE: KEEP THESE TWO VARIABLES BELOW IN THIS EXACT ORDER OR IT WON'T WORK IF MINUTES = 0 !!!
+	function UpdateRemaining(){
+		document.all['Remaining1'].innerHTML = MinutesLeft;
+		document.all['Remaining2'].innerHTML = MinutesLeft;
+		
+	}	
+	
+// -->
+</script>
+
+<script language="javascript">
+<!--
+// THIS CHECKS TO MAKE SURE THAT THE MAXIMUM MINUTES IS ALWAYS 60
+		if ( MinutesLeft >= 60 ) {
+	      MinutesLeft = 60;
+		}
+		
+// THIS CHECKS TO MAKE SURE THAT THE MINIMUM MINUTES IS ALWAYS 0
+		if ( MinutesLeft <= 0 ) {
+	      MinutesLeft = 0;
+		}
+
+// VARIABLES FOR THE BUY AND PLAY BUTTONS
+		var BuyButton = '\<a href\=\"wrapper\:\/\/buy\" class\=\"buttontext\"\>\<td\>\<img src\=\"button\_left\.gif\" width\=11 height\=44\>\<\/td\>\<td background\=\"button\_center\.gif\" nowrap valign\=\"middle\" align\=\"center\" class\=\"buttontext\"\>\<a href\=\"wrapper\:\/\/buy\" class\=\"buttontext\"\><scr'+'ipt>document.write(text_button_buynow);</scr'+'ipt>\<\/a\>\<\/td\>\<td\>\<img src\=\"button\_right\.gif\" width\=11 height\=44\>\<\/td\>\<\/a\>';
+		var PlayButton = '\<a href\=\"wrapper\:\/\/\launch\" class\=\"buttontext\"\>\<td\>\<img src\=\"button\_left\.gif\" width\=11 height\=44\>\<\/td\>\<td background\=\"button\_center\.gif\" nowrap valign\=\"middle\" align\=\"center\" class\=\"buttontext\"\>\<a href\=\"wrapper\:\/\/launch\" class\=\"buttontext\"\><scr'+'ipt>document.write(text_button_playdemo);</scr'+'ipt>\<\/a\>\<\/td\>\<td\>\<img src\=\"button\_right\.gif\" width\=11 height\=44\>\<\/td\>\<\/a\>';
+		
+// THIS CHECKS WHETHER TO SHOW BOTH BUTTONS OR NOT - BASED ON MINUTES LEFT AND/OR STATUS
+		
+		if ( MinutesLeft == 0 ) {
+	      DemoButtons = BuyButton;
+		} else {
+		  DemoButtons = PlayButton + BuyButton;
+		}
+
+// CONVERTS THE MinutesLeft VARIABLE TO A PERCENT FOR THE METER BAR
+		var PercentLeft = MinutesLeft * 100 / 60;
+		
+// CHECKS TO SEE IF THE MinutesLeft VARIABLE IS CURRENTLY SET TO 0. IF SO, THE METER BAR CHANGES
+		var PercentLeft_fixed = (PercentLeft > 0) ? '\<td nowrap\>\<img src\=\"fill\.gif\" alt\=\"\" height\=\"24\" width\=\"' + PercentLeft + '\%\"\>\<td\>' : '\<td valign\=\"middle\" align\=\"center\" nowrap height\=\"24\"\>\<span style\=\"font\-size\: 14px\; font\-family\: Verdana, Arial, Helvetica; font\-weight\: bold\; color\: red\; letter\-spacing\: 10px\;\"\><scr'+'ipt>document.write(text_statusbar_expired);</scr'+'ipt>\<\/span\>\<td\>';
+
+// MAKES THE WORD "minutes" SINGULAR IF MINUTES LEFT = 1		
+		var MinsPlural = "";
+		
+		if ( MinutesLeft == 1 ) {
+		  MinsPlural = text_minute;
+		} else {
+		  MinsPlural = text_minutes;
+		}
+
+// MESSAGE VARIABLES BASED ON MINUTESLEFT
+		var TheCalledValue = '\<span id\=\"Remaining1\" class\=\"bigred\"\>\(CALLED VALUE\)\<\/span\> \<span class\=\"bigred\"\> ' + MinsPlural + '\<\/span\>'
+		var SixtytoThirty = '<scr'+'ipt>document.write(text_gameplay_remaining_prepend1);</scr'+'ipt> \<br\>' + TheCalledValue + '\<br\> <scr'+'ipt>document.write(text_gameplay_remaining_append);</scr'+'ipt>';
+		var TwentyNinetoEleven = '<scr'+'ipt>document.write(text_gameplay_remaining_prepend2);</scr'+'ipt> \<br\>' + TheCalledValue + '\<br\> <scr'+'ipt>document.write(text_gameplay_remaining_append);</scr'+'ipt>';
+		var TentoTwo = '<scr'+'ipt>document.write(text_gameplay_remaining_prepend2);</scr'+'ipt> \<br\>' + TheCalledValue + '\<br\> <scr'+'ipt>document.write(text_gameplay_remaining_append);</scr'+'ipt>';
+		var OneMin = '\<span style\=\"color\: red\;\"\><scr'+'ipt>document.write(text_abouttoexpire_topline);</scr'+'ipt>\<\/span/>\<br\> <scr'+'ipt>document.write(text_gameplay_remaining_prepend3);</scr'+'ipt> ' + TheCalledValue + '\<br\> <scr'+'ipt>document.write(text_gameplay_remaining_append);</scr'+'ipt>';
+		var ZeroMin = '\<span class\=\"bigred\"\><scr'+'ipt>document.write(text_gameplay_remaining_expired);</scr'+'ipt>\<\/span\>\<span id\=\"Remaining1\" style\=\"font\-size\: 1px\; color\: white\;\"\>\(CALLED VALUE\)\<\/span\>';
+		var TheMessage = '';
+
+
+// MESSAGE GENERATORS BASED ON MINUTESLEFT
+		if ( MinutesLeft <= 60 && MinutesLeft >= 30 ) {
+	      TheMessage = SixtytoThirty;
+		}
+		
+		if ( MinutesLeft <= 29 && MinutesLeft >= 11 ) {
+	      TheMessage = TwentyNinetoEleven;
+		}
+		
+		if ( MinutesLeft <= 10 && MinutesLeft >= 2 ) {
+	      TheMessage = TentoTwo;
+		}
+		
+		if ( MinutesLeft == 1 ) {
+	      TheMessage = OneMin;
+		}
+		
+		if ( MinutesLeft == 0 ) {
+	      TheMessage = ZeroMin;
+		}
+
+// CLOSE WINDOW VARIATIONS BASED ON LAUNCH STATUS
+		var CloseWindow = "";
+		
+		if ( LaunchStatus == "prelaunch" ) {
+		  CloseWindow = '\<b\>\<a href\=\"wrapper\:\/\/close\" class\=\"buttontext\" style\=\"color\: \#666666\;\"\><scr'+'ipt>document.write(text_buttonbottom_closewindow1);</scr'+'ipt>\<\/a\>\<\/b\>';
+		} else {
+		  CloseWindow = '\<b\>\<a href\=\"wrapper\:\/\/close\" class\=\"buttontext\" style\=\"color\: \#666666\;\"\><scr'+'ipt>document.write(text_buttonbottom_closewindow2);</scr'+'ipt>\<\/a\>\<\/b\>';
+		}
+		
+// -->
+</script>
+
+<title>RealArcade</title>
+</head>
+
+<body bgcolor="#FFFFFF" link="#666666" vlink="#666666" leftmargin="0" marginheight="0" marginwidth="0" topmargin="0" scroll=no>
+<table width="750" border="0" cellspacing="0" cellpadding="0" background="gameart.jpg">
+<tr>
+<td rowspan="5"><img src="spacer.gif" height="467" width="460"></td>
+<td><img src="spacer.gif" height="10" width="280"></td>
+<td rowspan="5"><img src="spacer.gif" height="467" width="10"></td>
+</tr>
+<tr>
+<td><img src="contentbox_top.gif" height="11" width="280"></td>
+</tr>
+<tr>
+<td bgcolor="white" background="contentbox.gif">
+
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td><img src="spacer.gif" height="1" width="10"></td>
+<td><img src="spacer.gif" height="1" width="256"></td>
+<td><img src="spacer.gif" height="1" width="10"></td>
+</tr>
+<tr>
+<td><img src="spacer.gif" height="293" width="10"></td>
+<td valign="top">
+
+<!-- BEGINNING OF INNER TEXT CONTENT -->
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td colspan="2">
+<p style="font-size: 16px; font-family: Verdana, Arial, Helvetica; font-weight: bold; color: #006699;" align="center">
+<script language="JavaScript">
+<!--
+document.writeln(TheMessage);
+// -->
+</script>
+</p>
+</td>
+</tr>
+<tr>
+<td colspan="2"><img src="spacer.gif" height="10" width="1"></td>
+</tr>
+<tr>
+<td colspan="2"><img src="horzline.gif" height="1" width="256"></td>
+</tr>
+<tr>
+<td colspan="2"><img src="spacer.gif" height="10" width="1"></td>
+</tr>
+<tr>
+<td colspan="2" align="center"><span style="font-size: 16px; font-family: Verdana, Arial, Helvetica; font-weight: bold; color: #006699;"><script>document.write(text_ownthefullversion);</script></span></td>
+</tr>
+<tr>
+<td colspan="2"><img src="spacer.gif" height="8" width="1"></td>
+</tr>
+<tr>
+<td class="bullet" valign="top" nowrap><script>if (text_game_bullet1) {document.write("&bull;")};</script><img src="spacer.gif" height="5" width="5"></td>
+<td class="bullettext" valign="top"><script>if (text_game_bullet1) {document.write(text_game_bullet1)};</script></td>
+</tr>
+<tr>
+<td colspan="2"><img src="spacer.gif" height="8" width="1"></td>
+</tr>
+<tr>
+<td class="bullet" valign="top" nowrap><script>if (text_game_bullet2) {document.write("&bull;")};</script><img src="spacer.gif" height="5" width="5"></td>
+<td class="bullettext" valign="top"><script>if (text_game_bullet2) {document.write(text_game_bullet2)};</script></td>
+</tr>
+<tr>
+<td colspan="2"><img src="spacer.gif" height="8" width="1"></td>
+</tr>
+<tr>
+<td class="bullet" valign="top" nowrap><script>if (text_game_bullet3) {document.write("&bull;")};</script><img src="spacer.gif" height="5" width="5"></td>
+<td class="bullettext" valign="top"><script>if (text_game_bullet3) {document.write(text_game_bullet3)};</script></td>
+</tr>
+<td colspan="2"><img src="spacer.gif" height="8" width="1"></td>
+</tr>
+<tr>
+<td class="bullet" valign="top" nowrap><script>if (text_game_bullet4) {document.write("&bull;")};</script><img src="spacer.gif" height="5" width="5"></td>
+<td class="bullettext" valign="top"><script>if (text_game_bullet4) {document.write(text_game_bullet4)};</script></td>
+</tr>
+<td colspan="2"><img src="spacer.gif" height="8" width="1"></td>
+</tr>
+<tr>
+<td class="bullet" valign="top" nowrap><script>if (text_game_bullet5) {document.write("&bull;")};</script><img src="spacer.gif" height="5" width="5"></td>
+<td class="bullettext" valign="top"><script>if (text_game_bullet5) {document.write(text_game_bullet5)};</script></td>
+</tr>
+</table>
+
+<img src="spacer.gif" height="5" width="1">
+<!-- END OF INNER TEXT CONTENT -->
+</td>
+<td><img src="spacer.gif" height="100" width="10"></td>
+</tr>
+<tr>
+<td><img src="spacer.gif" height="164" width="10"></td>
+<td align="center">
+
+<!-- METER -->
+<table width="256" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td><img src="meter_upperleft.gif" height="11" width="11"></td>
+<td><img src="meter_top.gif" height="11" width="234"></td>
+<td><img src="meter_upperright.gif" height="11" width="11"></td>
+</tr>
+<tr>
+<td background="meter_left.gif"><img src="spacer.gif" height="11" width="11"></td>
+<td valign="top">
+
+<!-- INNER CONTENT OF METER -->
+<table width="234" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td colspan="4" align="center">
+<span style="font-size: 11px; font-family: Verdana, Arial, Helvetica; font-weight: bold; color: #006699;"><script>document.write(text_statusbar_caption);</script></span>
+<span id="Remaining2" style="font-size: 11px; font-family: Verdana, Arial, Helvetica; font-weight: bold; color: red;">(CALLED VALUE)</span> 
+<span style="font-size: 11px; font-family: Verdana, Arial, Helvetica; font-weight: bold; color: red;">
+<script language="JavaScript">
+<!--
+document.writeln(MinsPlural);
+// -->
+</script>
+</span><br>
+<img src="spacer.gif" height="3" width="1"><br>
+</td>
+</tr>
+<tr>
+<td width="1" align="center" bgcolor="#555555"><img src="spacer.gif" height="1" width="1"></td>
+<td colspan="2">
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" background="empty.gif">
+<tr>
+<script language="JavaScript">
+<!--
+document.writeln(PercentLeft_fixed);
+// -->
+</script>
+</tr>
+</table>
+
+</td>
+<td width="1" align="center" bgcolor="#555555"><img src="spacer.gif" height="1" width="1"></td>
+</tr>
+<tr>
+<td width="1" align="center" bgcolor="#555555"><img src="spacer.gif" height="1" width="1"></td>
+<td style="font-size: 10px; font-family: Verdana, Arial, Helvetica; color: #555555;" align="left">&nbsp;<script>document.write(text_statusbar_expiredlabel);</script></td>
+<td style="font-size: 10px; font-family: Verdana, Arial, Helvetica; color: #555555;" align="right"><script>document.write(text_statusbar_minutesdemolabel);</script>&nbsp;</td>
+<td width="1" align="center" bgcolor="#555555"><img src="spacer.gif" height="1" width="1"></td>
+</tr>
+</table>
+<!-- END OF INNER CONTENT OF METER -->
+
+</td>
+<td background="meter_right.gif"><img src="spacer.gif" height="11" width="11"></td>
+</tr>
+<tr>
+<td><img src="meter_lowerleft.gif" height="11" width="11"></td>
+<td><img src="meter_bottom.gif" height="11" width="234"></td>
+<td><img src="meter_lowerright.gif" height="11" width="11"></td>
+</tr>
+<tr>
+<td colspan="3"><img src="spacer.gif" height="4" width="1"></td>
+</tr>
+</table>
+<!-- End OF METER -->
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td colspan="2" align="center">
+
+<table border=0 cellpadding=0 cellspacing=0>
+<tr>
+<script language="JavaScript">
+<!--
+document.writeln(DemoButtons);
+// -->
+</script>
+</tr>
+</table>
+
+</td>
+</tr>
+
+</table>
+<img src="spacer.gif" height="8" width="1"><br>
+<span class="buttontext">
+<script language="JavaScript">
+<!--
+document.writeln(CloseWindow);
+// -->
+</script>
+</span></td>
+<td><img src="spacer.gif" height="100" width="10"></td>
+</tr>
+</table>
+
+</td>
+</tr>
+<tr>
+<td><img src="contentbox_bottom.gif" height="12" width="280"></td>
+</tr>
+<tr>
+<td><img src="spacer.gif" height="29" width="280"></td>
+</tr>
+</table>
+
+<script>UpdateRemaining();</script>
+</body>
+
+</html>

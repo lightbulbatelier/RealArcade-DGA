@@ -1,0 +1,27 @@
+[RegKeys]
+Reg1=-2147483648\SOFTWARE\RealNetworks\Update\6.0\Preferences\Components\RAB0B04BE81DE411B292D300D0B7142009:1.D
+Reg2=-2147483648\SOFTWARE\RealNetworks\Update\6.0\Preferences\Components\RAB0B04BE81DE411B292D300D0B7142009:1.D\Uninstall
+Reg3=-2147483648\SOFTWARE\RealNetworks\Update\6.0\Preferences\Components\RAB0B04BE81DE411B292D300D0B7142009:1.D\Product0
+Reg4=-2147483648\SOFTWARE\RealNetworks\Update\6.0\Preferences\Components\RAB0B04BE81DE411B292D300D0B7142009:1.D\DisplayName
+Reg5=-2147483648\SOFTWARE\RealNetworks\Update\6.0\Preferences\Components\RAB0B04BE81DE411B292D300D0B7142009:1.D\DisplayName
+Reg6=-2147483648\SOFTWARE\RealNetworks\Update\6.0\Preferences\Components\RAB0B04BE81DE411B292D300D0B7142009:1.D\Product1
+Reg7=-2147483648\SOFTWARE\RealNetworks\Games\backspinbilliards
+Reg8=-2147483648\SOFTWARE\RealNetworks\Games\backspinbilliards\1
+Reg9=-2147483648\SOFTWARE\RealNetworks\Games\backspinbilliards\1\Executable
+Reg10=-2147483648\SOFTWARE\RealNetworks\Games\backspinbilliards\1\InstallPath
+Reg11=-2147483648\SOFTWARE\RealNetworks\Games\backspinbilliards\1\GameName
+[TotalChanges]
+RegKeys=11
+Files=11
+[Files]
+File1=c:\My Games\Backspin Billiards\backspinbilliards_r1a.exe
+File2=c:\My Games\Backspin Billiards\generic.spc
+File3=c:\My Games\Backspin Billiards\launch.ini
+File4=c:\My Games\Backspin Billiards\license.txt
+File5=c:\My Games\Backspin Billiards\logo_distributor.jpg
+File6=c:\My Games\Backspin Billiards\readme.txt
+File7=c:\My Games\Backspin Billiards\resources.dat
+File8=c:\My Games\Backspin Billiards\setup.ini
+File9=c:\My Games\Backspin Billiards\version.txt
+File10=c:\My Games\Backspin Billiards\setup.ini
+File11=C:\Users\Glenn and Wendy\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Real\Games\Backspin Billiards.lnk

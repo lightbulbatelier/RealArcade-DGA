@@ -1,0 +1,154 @@
+<html>
+<head>
+
+<title>RealArcade</title>
+		
+<script language="javascript">
+<!--
+
+var str=(location.href); 
+var str_prefix = str.lastIndexOf('/') + 1 
+var str_postfix = str.lastIndexOf('pregame.htm') 
+var str_langid = str.substring(str_prefix, str_postfix) 
+
+void function startover() 
+{
+    parent.location = str_langid + 'pregame.htm';
+}
+
+void function back()
+{
+    parent.history.back();
+}
+
+
+void function refresh()
+{
+    parent.location.reload();
+}
+
+
+void function next()
+{
+    parent.history.forward();
+}
+
+function newImage(arg) {
+	if (document.images) {
+		rslt = new Image();
+		rslt.src = arg;
+		return rslt;
+	}
+}
+
+function changeImages() {
+	if (document.images && (preloadFlag == true)) {
+		for (var i=0; i<changeImages.arguments.length; i+=2) {
+			document[changeImages.arguments[i]].src = changeImages.arguments[i+1];
+		}
+	}
+}
+
+var preloadFlag = false;
+function preloadImages() {
+	if (document.images) {
+		butt_back_over = newImage("butt_back_over.gif");
+		butt_next_over = newImage("butt_next_over.gif");
+		preloadFlag = true;
+	}
+}
+
+
+
+var str=(location.href); 
+str_prefix = str.lastIndexOf('/') + 1 
+var str_postfix = str.lastIndexOf('buymenu.htm') 
+var str_langid = str.substring(str_prefix, str_postfix) 
+
+document.write('\<script src\=\"' + str_langid + 'strings.js\"\>\<\/script\>');
+
+// -->
+</SCRIPT>
+
+<style type="text/css">
+	<!--
+	.buttontext   { 
+		color: #0e335e; 
+		font-weight: normal; 
+		font-size: 8pt; 
+		font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; 
+		text-decoration: none; 
+		text-align: center; 
+		cursor: hand }
+	-->
+</style>
+
+
+		
+</head>
+<BODY BGCOLOR=#D6D7D6 LEFTMARGIN=0 TOPMARGIN=0 MARGINWIDTH=0 MARGINHEIGHT=0 ONLOAD="preloadImages();" scroll=NO>
+<!-- BEGINNING OF BUTTONS -->
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td width="5" align="center" colspan="7"><img src="spacer.gif" width="5" height="3" border="0"></td>
+</tr>
+<tr>
+<td><img src="spacer.gif" width="3" height="1" border="0"></td>
+<td bgcolor="white" nowrap valign="top">
+
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td width="17">
+<a href="javascript://" onclick="startover();"
+onmouseover="changeImages('backbutton', 'butt_back_over.gif'); return true;" 
+onmouseout="changeImages('backbutton', 'butt_back.gif'); return true;">
+<IMG NAME="backbutton" SRC="butt_back.gif" WIDTH=17 HEIGHT=17 BORDER=0></A></td>
+<td width="-1%" nowrap>
+<a href="javascript://" onclick="startover();"
+onmouseover="changeImages('backbutton', 'butt_back_over.gif'); return true;" 
+onmouseout="changeImages('backbutton', 'butt_back.gif'); return true;">
+<span class="buttontext">&nbsp;
+<script language="JavaScript">
+<!--
+document.write(text_menu_startOver);
+// -->
+</script></a></td>
+<td width="8">
+<a href="javascript://" onclick="startover();"
+onmouseover="changeImages('backbutton', 'butt_back_over.gif'); return true;" 
+onmouseout="changeImages('backbutton', 'butt_back.gif'); return true;">
+<img src="butt_right.gif" width="8" height="17" border="0"></a></td>
+</tr>
+</table>
+
+</td>
+<td width="5"><img src="spacer.gif" width="5" height="1" border="0"></td>
+<td bgcolor="white" nowrap valign="top">
+
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td width="8">
+<a href="javascript://" onclick="refresh();">
+<img src="butt_left.gif" width="8" height="17" border="0"></a></td>
+<td width="-1%" nowrap>
+<a href="javascript://" onclick="refresh();">
+<span class="buttontext">
+<script language="JavaScript">
+<!--
+document.write(text_menu_refresh);
+// -->
+</script>
+</a></td>
+<td width="8">
+<a href="javascript://" onclick="refresh();">
+<IMG SRC="butt_right.gif" WIDTH=8 HEIGHT=17 BORDER=0></A></td>
+</tr>
+</table>
+
+</td>
+<td><img src="spacer.gif" width="1" height="1" border="0"></td>
+</tr>
+</table>
+
+</body>
+</html>

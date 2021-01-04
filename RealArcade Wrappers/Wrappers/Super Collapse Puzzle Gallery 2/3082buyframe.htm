@@ -1,0 +1,61 @@
+<html>
+<head>
+
+<TITLE>RealArcade</TITLE>
+
+<script language=javascript>
+<!--
+
+	void function getBuyUrl()
+	{	
+		DocURL = top.document.location.href;
+		urlIndex =DocURL.indexOf("#",1);
+		if ( urlIndex < 0 )
+		{
+			return "";
+		}
+		url = DocURL.substr(urlIndex+1);
+		return unescape(url);
+	}
+
+	function onLoad()
+	{
+	    if ( frames.length > 1 )
+	    {
+	        frames.item(1).location.href = getBuyUrl();
+	    }
+	    return;
+	}
+
+	var str=(location.href); 
+	var str_postfix_default = str.lastIndexOf('/buyframe.htm')
+	var str_postfix = str.lastIndexOf('buyframe.htm') 
+	
+	if ( str_postfix_default + 1 != str_postfix )
+	{
+	var str_langid = str.substring(str_postfix - 4, str_postfix)
+	}
+	else
+	{
+	var str_langid = ""
+	}
+
+
+// -->
+</script>
+
+</head>
+
+<script language=javascript>
+<!--
+
+	document.write('\<frameset rows\=\"25,*\" border\=\"0\" frameSpacing\=\"0\" frameBorder\=\"0\" onload\=\"onLoad();\"\>');
+	document.write('\<frame name\=\"menu\" id\=\"menu\" src\=\"' + str_langid + 'buymenu.htm\" scrolling\=\"no\" target\=\"menu\"\>');
+	document.write('\<frame name\=\"main\" id\=\"main\" src\=\"replaced_by_onload\" target\=\"main\"\>');
+
+// -->
+</script>
+
+
+</frameset>
+</html>

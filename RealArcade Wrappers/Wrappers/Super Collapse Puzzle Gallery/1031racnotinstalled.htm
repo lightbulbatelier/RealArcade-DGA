@@ -1,0 +1,150 @@
+<html>
+<head> 
+
+
+<style type="text/css">
+	<!--
+	.bullet { font-family: Verdana, Arial, Helvetica; font-size: 14px; color: #006699; font-weight: bold; line-height: 14px; }
+	.bullettext { font-family: Verdana, Arial, Helvetica; font-size: 12px; color: #555555; }
+	.buttontext { font-size: 11px; font-weight: bold; font-family: Verdana, Arial, Helvetica; color: white; cursor:hand; text-decoration: none; }
+	.buttontext:hover { text-decoration: underline; }
+	.bigred { font-size: 26px; color: red; }
+	-->
+</style>
+
+<script src="status.js"></script>
+
+
+<script language="javascript">
+<!--
+// VARIABLES FOR THE BUTTONS
+var DLRACButton = '\<a href\=\"http\:\/\/switchboard.real.com\/arcade\/gamesites.html?ID\=900\" class\=\"buttontext\"\>\<td\>\<img src\=\"button\_left\.gif\" width\=11 height\=44\>\<\/td\>\<td background\=\"button\_center\.gif\" nowrap valign\=\"middle\" align\=\"center\" class\=\"buttontext\"\>\<a target\=\"_blank\" href\=\"http\:\/\/switchboard.real.com\/arcade\/gamesites.html?ID\=900\" class\=\"buttontext\"\><scr'+'ipt>document.write(text_button_DLRAC);</scr'+'ipt>\<\/a\>\<\/td\>\<td\>\<img src\=\"button\_right\.gif\" width\=11 height\=44\>\<\/td\>\<\/a\>';
+var BuyButton = '\<a href\=\"wrapper\:\/\/buy\" class\=\"buttontext\"\>\<td\>\<img src\=\"button\_left\.gif\" width\=11 height\=44\>\<\/td\>\<td background\=\"button\_center\.gif\" nowrap valign\=\"middle\" align\=\"center\" class\=\"buttontext\"\>\<a href\=\"wrapper\:\/\/buy\" class\=\"buttontext\"\><scr'+'ipt>document.write(text_button_buynow);</scr'+'ipt>\<\/a\>\<\/td\>\<td\>\<img src\=\"button\_right\.gif\" width\=11 height\=44\>\<\/td\>\<\/a\>';
+var CloseWindow = '\<b\>\<a href\=\"wrapper\:\/\/close\" class\=\"buttontext\" style\=\"color\: \#666666\;\"\><scr'+'ipt>document.write(text_buttonbottom_closewindow1);</scr'+'ipt>\<\/a\>\<\/b\>';
+
+
+var str=(location.href); 
+str_prefix = str.lastIndexOf('/') + 1 
+var str_postfix = str.lastIndexOf('racnotinstalled.htm') 
+var str_langid = str.substring(str_prefix, str_postfix) 
+
+document.write('\<script src\=\"' + str_langid + 'strings.js\"\>\<\/script\>');
+
+// -->
+</script>
+	
+<title>RealArcade</title>
+</head>
+
+<body bgcolor="#FFFFFF" link="#666666" vlink="#666666" leftmargin="0" marginheight="0" marginwidth="0" topmargin="0" scroll=no>
+<table width="750" border="0" cellspacing="0" cellpadding="0" background="gameart.jpg">
+<tr>
+<td rowspan="5"><img src="spacer.gif" height="467" width="460"></td>
+<td><img src="spacer.gif" height="10" width="280"></td>
+<td rowspan="5"><img src="spacer.gif" height="467" width="10"></td>
+</tr>
+<tr>
+<td><img src="contentbox_top.gif" height="11" width="280"></td>
+</tr>
+<tr>
+<td bgcolor="white" background="contentbox.gif">
+
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td><img src="spacer.gif" height="1" width="10"></td>
+<td><img src="spacer.gif" height="1" width="256"></td>
+<td><img src="spacer.gif" height="1" width="10"></td>
+</tr>
+<tr>
+<td><img src="spacer.gif" height="293" width="10"></td>
+<td valign="top">
+
+<!-- BEGINNING OF INNER TEXT CONTENT -->
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td colspan="2" align="center"><span style="font-size: 16px; font-family: Verdana, Arial, Helvetica; font-weight: 700; color: #006699"><script>document.write(text_needRAC_topline);</script></span></td>
+</tr>
+<tr>
+<td colspan="2"><img src="spacer.gif" height="8" width="1"></td>
+</tr>
+<tr>
+<td class="bullet" valign="top" nowrap>&bull;<img src="spacer.gif" height="5" width="5"></td>
+<td class="bullettext" valign="top"><script>document.write(text_needRAC_bullet1);</script></td>
+</tr>
+<tr>
+<td colspan="2"><img src="spacer.gif" height="8" width="1"></td>
+</tr>
+<tr>
+<td class="bullet" valign="top" nowrap>&bull;<img src="spacer.gif" height="5" width="5"></td>
+<td class="bullettext" valign="top"><script>document.write(text_needRAC_bullet2);</script></td>
+</tr>
+<tr>
+<td colspan="2"><img src="spacer.gif" height="8" width="1"></td>
+</tr>
+<tr>
+<td class="bullet" valign="top" nowrap>&bull;<img src="spacer.gif" height="5" width="5"></td>
+<td class="bullettext" valign="top"><script>document.write(text_needRAC_bullet3);</script></td>
+</tr>
+</table>
+
+<img src="spacer.gif" height="5" width="1"> 
+<!-- END OF INNER TEXT CONTENT --></td>
+<td><img src="spacer.gif" height="100" width="10"></td>
+</tr>
+<tr>
+<td><img src="spacer.gif" height="164" width="10"></td>
+<td align="center">
+
+<!-- METER -->
+<table width="256" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td><img src="spacer.gif" height="4" width="1"></td>
+</tr>
+</table>
+<!-- End OF METER -->
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td colspan="2" align="center">
+
+<table border=0 cellpadding=0 cellspacing=0>
+<tr>
+<script language="JavaScript">
+<!--
+document.writeln(DLRACButton + BuyButton);
+// -->
+</script>
+</tr>
+
+</table>
+
+</td>
+</tr>
+</table>
+
+<img src="spacer.gif" height="8" width="1"><br>
+<span class="buttontext">
+<script language="JavaScript">
+<!--
+document.writeln(CloseWindow);
+// -->
+</script>
+</span></td>
+<td><img src="spacer.gif" height="100" width="10"></td>
+</tr>
+</table>
+
+</td>
+</tr>
+<tr>
+<td><img src="contentbox_bottom.gif" height="12" width="280"></td>
+</tr>
+<tr>
+<td><img src="spacer.gif" height="9" width="280"></td>
+</tr>
+</table>
+
+</body>
+
+</html>
