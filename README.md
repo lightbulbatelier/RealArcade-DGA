@@ -5,7 +5,7 @@ This archive contains an important amount of games that were released by the now
 
 ### Status
 
-The list is a far incomplete, work-in-progress effort made by volunteers, albeit it is a good starting point for unifying all possible RealArcade setup files around the net and physical media. 227 games have been preserved here for historical purposes as of December 30th, 2020.
+The list is a far incomplete, work-in-progress effort made by volunteers, albeit it is a good starting point for unifying all possible RealArcade setup files around the net and physical media. 231 games have been preserved here for historical purposes as of December 30th, 2020.
 
 
 ### About RGS installer files
