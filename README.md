@@ -1,4 +1,4 @@
-![alt text](https://ia601706.us.archive.org/30/items/com.real.arcade/Medal_Acronym.png)
+<p align="center"><img width="360" height="360" src="https://ia601706.us.archive.org/30/items/com.real.arcade/Medal_Acronym.png"></p>
 
 # Welcome to the RealArcade Games Preservation Project!
 
