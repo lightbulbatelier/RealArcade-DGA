@@ -1,3 +1,5 @@
+![alt text](https://ia601706.us.archive.org/30/items/com.real.arcade/Medal_Acronym.png)
+
 # Welcome to the RealArcade Games Preservation Project!
 
 This archive contains an important amount of games that were released by the now defunct RealArcade (RealOne Arcade) service provider, one of the most influential games distributor during the golden age of the Web Games, right before the rise of the Mobile Gaming era started with the very first iPhone.
