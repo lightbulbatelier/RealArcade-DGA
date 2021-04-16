@@ -1,0 +1,2031 @@
+/*
+|
+|	RealArcade V3 stylesheet
+|
+*/
+
+body{
+margin:0;
+padding: 0;
+font-family: Verdana, sans-serif;
+font-size: small;
+background: #5187b5 url(http://i.realone.com/games/images/site_background_image.gif) no-repeat top left;
+}
+h1{
+font-size:10px;
+}
+h2{
+font-size:130%;
+}
+h3{
+font-size:130%;
+}
+#container {
+width: 760px;
+margin:0 auto;
+font-size:95%;
+border:0px solid #000;
+}
+p {
+margin: 0;
+padding: 0 0 10px 0;
+}
+br{
+clear:both;
+margin:0;
+padding:0;
+}
+.left{
+float:left;
+display:inline;
+}
+.right{
+float:right;
+display:inline;
+}
+a:link {
+color: #467bb1;
+text-decoration:none;
+}
+a:visited {
+color: #467bb1;
+text-decoration:none;
+}
+a:hover {
+color: #467bb1;
+text-decoration: underline;
+}
+a img {
+border: 1px solid #467bb1;
+}
+.bold {
+font-weight:bold;
+}
+#header a img {
+border: 0px;
+}
+
+/* topbar */
+#topbar{
+background:#fff url(http://i.realone.com/games/images/masterSprite.gif) no-repeat 0 0;
+background-position:0 0;
+width:760px;
+height:20px;
+margin:10px 0 0 0;
+padding:0;
+}
+#topbar .playercount{
+float:left;
+padding:4px 8px;
+}
+#topbar ul{
+display:inline;
+list-style:none;
+float:right;
+margin:0;
+padding:3px 18px 0 0;
+}
+#topbar li {
+float:left;display:inline;
+padding:0 0 0 15px;
+font-weight:bold;
+}
+/* header */
+#header{
+width:758px;
+height:60px;
+border: 1px solid #8fc6ff;
+border-top:0;
+border-bottom:0;
+background:#fff url(http://i.realone.com/games/images/masterSprite.gif) no-repeat 0 0;
+background-position:0 -40px;
+}
+#header_logo{
+margin:6px 8px 0 8px;
+float:left;
+}
+#header_links{
+margin:4px 8px 0 0;
+float:right;
+
+}
+/* BEGIN GamePassInfo Styles */
+#gamePassInfo{
+float:left;
+}
+
+#gamePassCreditWrapper{
+position:relative;
+float:left;
+border:2px solid #8fc6ff;
+background-color:#ecf5ff;
+padding:0;
+margin:0 5px 0 0;
+z-index:10;
+}
+#gamePassCredits{
+width:230px;
+margin:8px;
+font-size:100%;
+}
+#gamePassCreditsleft{
+float:left;
+margin-right:24px;
+}
+#gamePassMore{
+float:left;
+cursor:pointer;
+color:#467bb1;
+width:50px;
+}
+#gamePassMessage{
+color:red;
+float:left;
+}
+#gamePassInfoExpanded{
+display:none;
+position:absolute;
+top:22px;
+left:-2px;
+z-index:10;
+width:246px;
+border:2px solid #8fc6ff;
+border-top:0;
+background-color:#ecf5ff;
+}
+#gpCreditInformation div{
+margin:8px 5px;
+line-height:1.4em;
+}
+#gamePassInfoSignedOut{
+height:32px;
+width:370px;
+border:0px solid #000;
+background:url(http://i.realone.com/games/images/masterSprite.gif) no-repeat 0 0;
+background-position:0px -160px;
+padding:0;
+margin-top:4px;
+opacity:0.4;
+filter:alpha(opacity=40);
+float:left;
+}
+#gamePassInfoSignedOut h1{
+font-size:90%;
+margin:8px 0 0 10px;
+padding:0;
+}
+/* END GamePassInfo Styles */
+
+/* search bar */
+#searchbar{
+z-index:1;
+position:relative;
+float:right;
+margin:0 10px 0 0;
+padding:6px 0 0 0;
+border:0px solid #000;
+text-align:center;
+width:236px;
+}
+#searchbar form{
+margin:0;
+padding:0;
+}
+#searchbar .textfield{
+width:100px;
+height:22px;
+padding:0;
+margin:3px 0 0 0;
+}
+.curved-top{
+border: 0px solid #000;
+width:760px;
+margin: 0 auto;
+height:9px;
+background: #fff;
+background: url(http://i.realone.com/games/images/footer_top.gif) no-repeat bottom left;
+line-height:0;
+}
+.curved-bottom{
+width:760px;
+margin: 0 auto;
+height:9px;
+margin-bottom:6px;
+background: #fff;
+background: url(http://i.realone.com/games/images/header_bottom.gif) no-repeat top left;
+line-height:0;
+}
+.GP_page_layout_04 {
+background: #fff;
+background: url(http://i.realone.com/games/images/GP_page_layout_04.jpg) no-repeat scroll left top;
+float: left;
+-moz-background-clip: -moz-initial;
+-moz-background-origin: -moz-initial;
+-moz-background-inline-policy: -moz-initial;
+width: 187px;
+height: 63px;
+}
+.GP_page_layout_07 {
+background: #fff;
+background: url(http://i.realone.com/games/images/GP_page_layout_07.jpg) no-repeat scroll left top;
+float: left;
+-moz-background-clip: -moz-initial;
+-moz-background-origin: -moz-initial;
+-moz-background-inline-policy: -moz-initial;
+width: 551px;
+height: 163px;
+}
+/* content */
+#content{
+border: 1px solid #8fc6ff;
+border-top:none;
+border-bottom:none;
+background: #fff;
+}
+#content .gutter {
+padding: 14px 6px 10px 6px;
+}
+.section {
+border: 0px solid #000;
+margin:0;
+padding:0;
+clear:both;
+}
+/* slightly enhanced, universal clearfix hack */
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block;}
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+.homepage_bottom_modules{
+background:#fff url(http://i.realone.com/games/images/masterSprite.gif) no-repeat 0 0;
+background-position:-240px -335px; 
+float: left; 
+width: 240px; 
+line-height: 1.2em; 
+margin-right: 5px; 
+height: 125px;
+}
+.homepage_bottom_coming_modules{
+background:#fff url(http://i.realone.com/games/images/masterSprite.gif) no-repeat 0 0;
+background-position:0 -335px;
+float: left; 
+width: 240px; 
+line-height: 1.2em; 
+margin-right: 5px; 
+height: 125px;
+}
+.module_image a img {border:0px;}
+
+
+
+/* End hide from IE-mac */
+
+/* Flash Slideshow */
+
+.slideshow{
+float:left;
+margin-right:5px;
+width:440px;
+border: 0px solid #000;
+}
+
+/* End of Flash Slideshow */
+
+/* Home page slide show */
+.home_feature_slider_content{
+border:0px solid #999;
+border-top:0;
+border-bottom:0;
+background:#fff;
+}
+.home_feature_slider_left{
+float:left;
+width:440px;
+height:215px;
+}
+.home_feature_slider_left a img {
+border: 0px;
+}
+
+/* End of home page slideshow */
+
+/* Feature Slider */
+.feature_slider_wrapper{
+float:left;
+width:440px;
+margin:0 4px 5px 0;
+}
+.feature_slider_header{
+text-align:left;
+height:24px;
+width:440px;
+background:#fff url(http://i.realone.com/games/images/masterSprite.gif) no-repeat 0 0;
+background-position:0 -192px;
+}
+.feature_slider_header .header_text{
+margin:2px 0 0 10px;
+font-size:110%;
+font-weight:bold;
+}
+.feature_slider_content{
+border:1px solid #999;
+border-top:0;
+border-bottom:0;
+background:#fff;
+background: url(http://i.realone.com/games/images/feature_slider_bg.gif) repeat-y 220px 0;
+}
+.feature_slider_left{
+float:left;
+width:220px;
+height:220px;
+}
+.feature_slider_title{
+font-size:110%;
+font-weight:bold;
+margin:5px 0;
+}
+.feature_slider_desc{
+font-size:90%;
+}
+.feature_slider_right{
+float:left;
+width:216px;
+height:220px;
+}
+.feature_slider_gutter{
+padding:12px;
+}
+.feature_slider_buttons{
+border:0px solid #000;
+}
+.feature_slider_buttons div{
+float:left;
+}
+.feature_slider_buttons img{
+border:0px;
+}
+.feature_slider_buttons a, .feature_slider_buttons a:visited{
+text-decoration:none;
+color:#666;
+}
+.feature_slider_footer{
+padding:10px;
+margin: 0;
+height:7px;
+background:url(http://i.realone.com/games/images/feature_slider_footer.gif) no-repeat top left; 
+background-repeat:no-repeat;
+line-height:0px;
+}
+
+/* End of Feature Slider */
+
+/* MyGames widget */
+
+#gameListDisplay{
+border:1px solid #8fc6ff;
+}
+#myGamesListSort{
+margin:10px;
+font-weight:bold;
+} 
+#myGamesReDownload	{position:relative;top:-14px;float:right;height:6px;}
+.listRowPosition	{position:relative;height:128px;border-bottom:1px solid #8fc6ff;}
+.gameDetailContainerPosition	{position:absolute;left:190px;top:5px;height:50px;width:370px;margin-top:10px;}
+.purchaseStatusPosition	{position:absolute;left:180px;top:55px;height:65px;width:230px;}
+.timesPlayed		{position:relative;top:10px;font-size:10px;}
+.buyPlayPosition	{position:absolute;left:400px;top:55px;height:65px;width:136px;cursor:pointer;}
+.buyButtonPosition	{position:absolute;top:15px;left:0px;width:74px;height:34px;cursor:pointer;}
+.playButtonPosition	{position:absolute;top:15px;left:84px;width:74px;height:34px;cursor:pointer;}
+#playExpired .playButtonPosition	{position:absolute;top:15px;left:84px;width:74px;height:34px;cursor:default;}
+.uninstallContainer	{position:absolute;top:80px;left:570px;cursor:hand;color:#467bb1;cursor:pointer;}
+.progressBarPosition	{position:absolute;top:30px;left:20px;height:18px;width:151px;}
+.whiteBorderOn		{border:1px solid black;cursor:pointer;}
+.whiteBorderOff		{border:1px solid white;cursor:pointer;};
+.blackBorderOn		{border:1px solid white;cursor:pointer;};
+.blackBorderOff		{border:1px solid black;cursor:pointer;};
+.blackImageBorder	{border:1px solid black;}
+.fullGameInd		{position:absolute;left:10px;top:5px;height:123px;width:180px;background-image:url(http://i.realone.com/games/images/full_game_indicator.jpg);background-repeat:no-repeat;}
+.demoGameInd		{position:absolute;left:10px;top:5px;height:123px;width:180px;background-image:url(http://i.realone.com/games/images/demo_game_indicator.jpg);background-repeat:no-repeat;}
+.sponsoredGameInd	{position:absolute;left:10px;top:5px;height:123px;width:180px;background-image:url(http://i.realone.com/games/images/sponsored_game_indicator.jpg);background-repeat:no-repeat;}
+.unlimitedGameInd	{position:absolute;left:10px;top:5px;height:123px;width:180px;background-image:url(http://i.realone.com/games/images/unlimited_game_indicator.gif);background-repeat:no-repeat;}
+.gameImagePosition	{position:absolute;top:3px;left:17px;}
+.myRacNoGamesState 	{height:30px;font-weight:bold;padding:20px;line-height:1.4em;}
+.aquaBox			{border:1px solid #93C8FF;background-color:#E0EFFF}
+#myGamesHelperSection	{display:none;margin-top:10px;font-weight:normal;}
+#myGamesDontSee		{width:728px;height:30px;line-height:30px;font-weight:bold;padding-left:15px;}
+#myGamesFfox		{display:none;width:743px;height:80px;border-top:0px;}
+#myGamesFfoxIcon	{float:left;width:82px;padding-top:8px;padding-left:15px;}
+#myGamesFfoxText	{float:left;width:560px;padding-top:8px;padding-left:7px;}
+#myGamesReDown		{width:743px;height:60px;border-top:0px;}
+#myGamesReDownIcon	{float:left;width:82px;padding-top:10px;padding-left:22px;}
+#myGamesReDownText	{float:left;width:560px;padding-top:16px;}
+.px10	{font-size:10px;}
+/* End of MyGames widget */
+
+/* Recently played games control */
+#gameSliderCaption{
+width:220px;
+height:18px;
+margin:0 auto;
+background:url(http://i.realone.com/games/images/recently_played_header.gif) no-repeat 0 0;
+text-align:center;
+line-height:1.6em;
+font-weight:bold;
+font-size:10px;
+}
+#gameSliderContainer{
+margin:4px 0 8px 0;
+padding:0;
+}
+.slideLeftEnabled{
+position:relative;
+width:30px;
+height:70px;
+float:left;
+border:0px solid black;
+background:url(http://i.realone.com/games/images/recently_played_button_left_arrow.gif) no-repeat 0 0;
+cursor:pointer;
+}
+.slideLeftDisabled{
+position:relative;
+width:30px;
+height:70px;
+float:left;
+border:0px solid red;
+background:url(http://i.realone.com/games/images/recently_played_button_left_no_arrow.gif) no-repeat 0 0;
+}
+.slideRightEnabled{
+position:relative;
+width:30px;
+height:70px;
+float:left;
+border:0px solid black;
+background:url(http://i.realone.com/games/images/recently_played_button_right_arrow.gif) no-repeat 0 0;
+cursor:pointer;
+}
+.slideRightDisabled{
+position:relative;
+width:30px;
+height:70px;
+float:left;
+border:0px solid red;
+background:url(http://i.realone.com/games/images/recently_played_button_right_no_arrow.gif) no-repeat 0 0;
+}
+.slidingGameWindow {
+position:relative;
+float:left;
+width:684px;
+height:68px;
+border:1px solid #9dcefe;
+border-left:0;
+border-right:0;
+overflow:hidden;
+}
+.slidingGamePane {
+position:relative;
+width:3000px;
+}
+.slidingGame {
+position:relative;
+float:left;
+width:211px;
+height:56px;
+border:1px solid #8fc6ff;
+background: #ecf5ff;
+margin:3px 7px 3px 3px;
+padding:2px;
+color:#467bb1;
+cursor:pointer;
+}
+.slidingGame img{
+float:left;
+margin:2px 5px 0 3px;}
+
+/* End of Recently played games control */
+
+/* Ads */
+.featured_ad {
+float:left;
+margin:0 4px 5px 0;
+}
+.ad_square_wrapper{
+float:left;
+width:300px;
+margin-bottom:5px;
+line-height:0px;
+}
+.ad_square_header{
+text-align:left;
+height:15px;
+background:#fff url(http://i.realone.com/games/images/masterSprite.gif) no-repeat 0 0;
+background-position:-440px -193px;
+}
+.ad_square_header .header_text{
+font-size:80%;
+margin:9px 0 0 8px;
+line-height:15px;
+}
+.ad_square_footer{
+margin: 0;
+height:7px;
+background:#fff url(http://i.realone.com/games/images/masterSprite.gif) no-repeat 0 0;
+background-position:-440px -209px;
+line-height:0px;
+}
+
+.ad_rect_wrapper{
+float:left;
+width:160px;
+}
+/* End of Ads */
+
+/* product page */
+.page_title{
+float:left;
+width:740px;
+height:50px;
+margin:0 auto 10px auto;
+padding:0;
+background:url(http://i.realone.com/games/images/title_module_bg.gif) no-repeat top left; 
+border:0px solid #000;
+}
+.page_title h3{
+padding:0;
+margin:14px 15px 0 15px;
+border:0px solid #000;
+}
+.download_section{
+float:left;
+width:430px;
+margin:0px 0 5px 0;
+line-height:1.4em;
+}
+.download_section_padding{
+padding:0 10px 10px 10px;
+}
+.download_vert_padding{
+margin:0 0 10px 0;
+}
+#editor_rating{
+margin:8px 0 5px 0;
+}
+.list_price{
+margin:0 0 0 0px;
+border: 0px solid #000;
+}
+.download_price_and_esrb {
+margin:0 0 10px 0;
+padding:0;
+}
+
+#priceInfo { 
+float:left; 
+width:220px;
+}
+
+#esrb{
+float:right;
+width:170px;
+padding:30px 0px 0px 0px;
+margin:25px 0px 0px 0px;
+}
+
+.esrb_wrapper {
+position:relative;
+width:170px;
+bottom:0px;
+margin-top:35px;
+}
+
+
+.esrb_descriptors {
+position:absolute;
+bottom:0px;
+left:0px;
+width:126px;
+text-align:right;
+margin:0px 0px 0px 0px;
+padding:0px 2px 0px 0px;
+font-size:8pt;
+line-height:9pt;
+}
+
+.esrb_image {
+position:absolute;
+bottom:0px;
+left:130px;
+margin:0px 0 0 0;
+padding:0px;
+height:54px;    
+width:38px;
+vertical-align:bottom;
+}
+#gamePassProductPage{
+border:1px solid #8fc6ff;
+background-color:#ecf5ff;
+margin-bottom:5px;
+}
+#gamePassProductPage div{
+margin:5px;
+font-size:100%;
+}
+.gpFont{
+font-style:italic;
+color:#1c486f;
+font-family:helvetica;
+}
+#fileSize{
+margin-left:30px;
+font-size:80%;
+}
+#screenshots{
+margin:3px 0;
+}
+#gameFeatureListLeft ul{
+padding-top:0;
+margin-top:3px;
+margin-bottom:5px;
+}
+#productpage_tab1 .screenshots{
+float:left;
+width:130px;
+border:0px solid #000;
+}
+#productpage_tab1 .descriptions{
+float:left;
+width:370px;
+border:0px solid #000;
+margin:0 12px 0 8px;
+}
+#productpage_tab1 .details{
+float:left;
+width:200px;
+border:0px solid #000;
+font-size:90%;
+}
+#productpage_tab1 .div_padding{
+margin-bottom:10px;
+}
+.product_recommend_wrapper{
+width:290px;
+border-left:1px solid #999;
+margin:15px 0 0 0;
+float:left;
+}
+.product_recommend_gutter{
+padding:0 0 0 15px;
+margin:0;
+}
+
+.unlimitedTimeMessaging{
+display:none;
+height:40px;
+width:160px;
+text-align:center;
+}
+/* end of product page */
+#sidebar {
+float: right;
+width: 185px;
+margin:0;
+border:0px solid #000;
+}
+#sidebar img {
+margin:0 0 4px 0;
+}
+/* Module */
+
+/* set the image to use and establish the lower-right position */ 
+.module, .module_body, .module_head, .module_head h2 { 
+background: white url(http://i.realone.com/games/images/samplebox1.gif) no-repeat bottom right; 
+} 
+.module { 
+width: 240px; /* intended total box width - padding-right(next) */ 
+/*width: 240px; /* IE Win = width - padding */ 
+padding-right: 0px; /* the gap on the right edge of the image (not content padding) */ 
+margin:0 5px 5px 0px; /* use to position the box */ 
+float:left;
+border:0px solid #000;
+} 
+/* set the top-right image */ 
+.module_head { 
+background-position: top right; 
+margin-right: -0px; /* pull the right image over on top of border */ 
+padding-right: 10px; /* right-image-gap + right-inside padding */ 
+border:0px solid #000;
+} 
+/* set the top-left image */ 
+.module_head h2 { 
+background-position: top left; 
+margin: 0; /* reset main site styles*/ 
+border: 0; /* ditto */ 
+padding: 5px 0 5px 7px; /* padding-left = image gap + interior padding ... no padding-right */ 
+height: auto !important; height: 1%; /* IE Holly Hack */ 
+border:0px solid #000;
+font-size:105%;
+} 
+/* set the lower-left corner image */ 
+.module_body { 
+background-position: bottom left; 
+margin-right: 10px; /* interior-padding right */ 
+padding: 5px 0 8px 7px; /* mirror .cssbox_head right/left */ 
+border:0px solid #000;
+}
+#newModule .module, #newModule .module_body, #newModule .module_head, #newModule .module_head h2 { 
+background: white url(http://i.realone.com/games/images/samplebox1_new.gif) no-repeat bottom right; 
+} 
+#newModule .module { 
+width: 240px; /* intended total box width - padding-right(next) */ 
+/*width: 240px; /* IE Win = width - padding */ 
+padding-right: 0px; /* the gap on the right edge of the image (not content padding) */ 
+margin:0 5px 5px 0px; /* use to position the box */ 
+float:left;
+border:0px solid #000;
+} 
+/* set the top-right image */ 
+#newModule .module_head { 
+background-position: top right; 
+margin-right: -0px; /* pull the right image over on top of border */ 
+padding-right: 50px; /* right-image-gap + right-inside padding */ 
+border:0px solid #000;
+} 
+/* set the top-left image */ 
+#newModule .module_head h2 { 
+background-position: top left; 
+margin: 0; /* reset main site styles*/ 
+border: 0; /* ditto */ 
+padding: 5px 0 5px 7px; /* padding-left = image gap + interior padding ... no padding-right */ 
+height: auto !important; height: 1%; /* IE Holly Hack */ 
+border:0px solid #000;
+font-size:105%;
+} 
+/* set the lower-left corner image */ 
+#newModule .module_body { 
+background-position: bottom left; 
+margin-right: 10px; /* interior-padding right */ 
+padding: 5px 0 8px 7px; /* mirror .cssbox_head right/left */ 
+border:0px solid #000;
+}
+.module ul {
+margin: 0;
+padding: 5px;
+border:0px solid #000;
+list-style: none;
+}
+.module li {
+margin: 0 0 4px 0; 
+padding: 0;
+} 
+.game_list{
+line-height:1.2em;
+border:0px solid #000;
+height:60px;
+clear:both;
+}
+#topten .game_list{
+height:66px;
+}
+.game_list_count{
+width:20px;
+text-align:right;
+}
+.game_list img{
+float:left;
+margin:0 6px 0 4px;
+}
+.game_list_more{
+float:right;
+margin:0 5px 0 0;
+font-size:80%;
+border:0px solid #000;
+}
+/* End of Module */
+/* Cash Upsell Module */
+#cash_upsell {
+float:left;
+}
+#cash_upsell .module, #cash_upsell .module_body, #cash_upsell .module_head, #cash_upsell .module_head h2 { 
+background: none; 
+} 
+#cash_upsell .module{ 
+height:83px;
+width:746px;
+background:#fff url(http://i.realone.com/games/images/masterSprite.gif) no-repeat 0 0;
+background-position:0 -252px;
+}
+#cash_upsell .module { 
+width:746px; /* intended total box width - padding-right(next) */ 
+height:83px;
+/*width: 240px; /* IE Win = width - padding */ 
+padding-right: 0px; /* the gap on the right edge of the image (not content padding) */ 
+margin:0 0 5px 0; /* use to position the box */ 
+float:left;
+border:0px solid #000;
+} 
+/* set the top-right image */ 
+#cash_upsell .module_head { 
+display:none;
+} 
+/* set the top-left image */ 
+#cash_upsell .module_head h2 { 
+background-position: top left; 
+margin: 0; /* reset main site styles*/ 
+border: 0; /* ditto */ 
+padding:0; /* padding-left = image gap + interior padding ... no padding-right */ 
+height: auto !important; height: 1%; /* IE Holly Hack */ 
+border:0px solid #000;
+font-size:105%;
+} 
+/* set the lower-left corner image */ 
+#cash_upsell .module_body { 
+background-position: bottom left; 
+margin: 10px 0 0 90px; /* interior-padding right */ 
+padding: 0px; /* mirror .cssbox_head right/left */ 
+border:0px solid #000;
+}
+#cash_upsell .game_list{
+float:left;
+width:210px;
+line-height:1.2em;
+border:0px solid #000;
+height:60px;
+clear:none;
+border:0px solid #000;
+}
+#cash_upsell .game_list_more{
+display:none;
+}
+/* End of Cash Upsell */
+/* Game Tool Tip */
+#divGameToolTip{
+position:absolute;top:0px;left:0px;
+display:none;
+height:283px;
+width:217px;
+padding:5px;
+z-index:10;
+background:url(http://i.realone.com/games/images/hover_popup.png);background-repeat:no-repeat;
+}
+#divGameToolTip .gutter{
+margin:10px 12px 10px 10px;
+width:180px;
+border: 0px solid #9dcefe;
+}
+#ttGameName{
+font-size:120%;
+font-weight:bold;
+margin:5px 0 3px 0;
+}
+#divGameToolTip hr{
+border: none 0;
+border-top: 1px solid #999;
+height: 1px;
+}
+#ttGameHeadline{
+margin-bottom:8px;
+}
+#ttGameImg{
+margin:0 0 5px 0;
+}
+#ttGameDesc{
+margin-bottom:5px;
+}
+/* End of Game Tool Tip */
+
+.whole_page_span{
+width:746px;
+margin:0 auto;
+}
+.minHeight{
+	min-height:746px;
+}
+/* Buttons */
+a.buttons-Small{
+font-size:14px;
+font-weight:bold;
+text-decoration:none;
+display:block;
+line-height:35px;
+padding:0;
+margin:0;
+text-align:center;
+background:url(http://i.realone.com/games/images/button_imagesheet_blue.gif) no-repeat 0 0;
+background-position:-4px -112px;
+color:#467bb1;
+border:1px solid #000;
+width:78px;
+}
+a.buttons-Small:hover{
+text-decoration:none;
+}
+a.buttons-Small.click{
+background-position:-83px -112px;
+}
+a.buttons-Med{
+font-size:14px;
+font-weight:bold;
+text-decoration:none;
+display:block;
+line-height:40px;
+width:156px;
+padding:0;
+margin:0;
+text-align:center;
+background:url(http://i.realone.com/games/images/button_imagesheet_blue.gif) no-repeat 0 0;
+background-position:-6px -70px;
+color:#467bb1;
+border:0px solid #000;
+}
+a.buttons-Med:hover{
+text-decoration:none;
+}
+a.buttons-Med.click{
+background-position:-168px -70px;
+line-height:40px;
+}
+a.buttons-Large{
+font-size:14px;
+font-weight:bold;
+border:0px solid #000;
+text-decoration:none;
+display:block;
+line-height:70px;
+padding:0;
+text-align:center;
+background:url(http://i.realone.com/games/images/button_imagesheet_blue.gif) no-repeat 0 0;
+width:162px;
+background-position:0px 0px;
+color:#467bb1;
+}
+a.buttons-Large:hover{
+text-decoration:none;
+}
+a.buttons-Large.click{
+background-position:-162px 0px;
+line-height:70px;
+}
+a.SecondColorButtons-Small{
+font-size:14px;
+font-weight:bold;
+text-decoration:none;
+display:block;
+line-height:35px;
+padding:0;
+margin:0;
+text-align:center;
+background:url(http://i.realone.com/games/images/button_imagesheet_green.gif) no-repeat 0 0;
+background-position:-4px -112px;
+color:#005900;
+border:1px solid #000;
+width:78px;
+}
+a.SecondColorButtons-Small:hover{
+text-decoration:none;
+}
+a.SecondColorButtons-Small.SecondColorButtons-Smallclick{
+background-position:-83px -112px;
+}
+a.SecondColorButtons-Med{
+font-size:14px;
+font-weight:bold;
+text-decoration:none;
+display:block;
+line-height:40px;
+width:156px;
+padding:0;
+margin:0;
+text-align:center;
+background:url(http://i.realone.com/games/images/button_imagesheet_green.gif) no-repeat 0 0;
+background-position:-6px -70px;
+color:#005900;
+border:0px solid #000;
+}
+a.SecondColorButtons-Med:hover{
+text-decoration:none;
+}
+a.SecondColorButtons-Med.SecondColorButtons-Medclick{
+background-position:-168px -70px;
+line-height:40px;
+}
+a.SecondColorButtons-Large{
+font-size:14px;
+font-weight:bold;
+border:0px solid #000;
+text-decoration:none;
+display:block;
+line-height:70px;
+padding:0;
+text-align:center;
+background:url(http://i.realone.com/games/images/button_imagesheet_green.gif) no-repeat 0 0;
+width:162px;
+background-position:0px 0px;
+color:#005900;
+}
+a.SecondColorButtons-Large:hover{
+text-decoration:none;
+}
+a.SecondColorButtons-Large.SecondColorButtons-Largeclick{
+background-position:-162px 0px;
+line-height:70px;
+}
+a.SecondColorButtons-Small:link, a.SecondColorButtons-Med:link, a.SecondColorButtons-Large:link,a.SecondColorButtons-Small:visited, a.SecondColorButtons-Med:visited, a.SecondColorButtons-Large:visited{
+color:#005900;
+}
+a.ThirdColorButtons-Small{
+font-size:14px;
+font-weight:bold;
+text-decoration:none;
+display:block;
+line-height:35px;
+padding:0;
+margin:0;
+text-align:center;
+background:url(http://i.realone.com/games/images/button_imagesheet_red.gif) no-repeat 0 0;
+background-position:-4px -112px;
+color:#fff;
+border:1px solid #000;
+width:78px;
+}
+a.ThirdColorButtons-Small:hover{
+text-decoration:none;
+}
+a.ThirdColorButtons-Small.ThirdColorButtons-Smallclick{
+background-position:-83px -112px;
+}
+a.ThirdColorButtons-Med{
+font-size:14px;
+font-weight:bold;
+text-decoration:none;
+display:block;
+line-height:40px;
+width:156px;
+padding:0;
+margin:0;
+text-align:center;
+background:url(http://i.realone.com/games/images/button_imagesheet_red.gif) no-repeat 0 0;
+background-position:-6px -70px;
+color:#fff;
+border:0px solid #000;
+}
+a.ThirdColorButtons-Med:hover{
+text-decoration:none;
+}
+a.ThirdColorButtons-Med.ThirdColorButtons-Medclick{
+background-position:-168px -70px;
+line-height:40px;
+}
+a.ThirdColorButtons-Large{
+font-size:14px;
+font-weight:bold;
+border:0px solid #000;
+text-decoration:none;
+display:block;
+line-height:70px;
+padding:0;
+text-align:center;
+background:url(http://i.realone.com/games/images/button_imagesheet_red.gif) no-repeat 0 0;
+width:162px;
+background-position:0px 0px;
+color:#fff;
+}
+a.ThirdColorButtons-Large:hover{
+text-decoration:none;
+}
+a.ThirdColorButtons-Large.ThirdColorButtons-Largeclick{
+background-position:-162px 0px;
+line-height:70px;
+}
+a.ThirdColorButtons-Small:link, a.ThirdColorButtons-Med:link, a.ThirdColorButtons-Large:link,a.ThirdColorButtons-Small:visited, a.ThirdColorButtons-Med:visited, a.ThirdColorButtons-Large:visited{
+color:#fff;
+}
+.submitButton{
+border: none;
+background: url(http://i.realone.com/games/images/submitButton.gif) no-repeat bottom left;
+padding: 2px 10px 2px 5px;
+width:64px;
+margin:0;
+font-weight:bold;
+font-size:13px;
+color:#333333;
+}
+/* End of Buttons */
+
+
+
+/* Recommendation Games List Module */
+.reco_curved_top{
+height:6px;
+width:744px;
+margin: 0 auto;
+line-height:0;
+background:#fff url(http://i.realone.com/games/images/masterSprite.gif) no-repeat 0 0;
+background-position:0 -216px;
+}
+.reco_curved_bottom{
+width:744px;
+margin: 0 auto;
+height:6px;
+margin-bottom:5px;
+line-height:0;
+background:#fff url(http://i.realone.com/games/images/masterSprite.gif) no-repeat 0 0;
+background-position:0 -222px;
+}
+.recommendation_gamelist_wrapper{
+border-left:1px solid #999;
+border-right:1px solid #999;
+width:742px;
+}
+
+.recommendation_gamelist_content{
+margin:8px 5px 0 5px;
+text-align:left;
+}
+.recommendation_gamelist_content .game_list{
+padding:5px;
+margin:8px 5px 10px 5px;
+border:1px solid #8fc6ff;
+background: #ecf5ff;
+width:215px;
+clear:both;
+}
+.recommendation_gamelist_content .game_list img{
+float:left;
+margin:0 6px 0 4px;
+}
+#selGame{
+width:350px;
+}
+/* Sortable List Module */
+.sortable_gamelist_wrapper{
+width:746px;
+margin:0;
+border: 0px solid #000;
+}
+.sortable_gamelist_header{
+text-align:left;
+height:24px;
+background:#fff url(http://i.realone.com/games/images/masterSprite.gif) no-repeat 0 0;
+background-position:0 -228px;
+}
+.header_text h2 { 
+margin:2px 0 0 10px;
+font-size:110%;
+font-weight:bold;
+} 
+.sortable_gamelist_content{
+border:0px solid #ccc;
+border-top:0;
+padding:0 10px;
+background:#fff;
+background: url(http://i.realone.com/games/images/feature_slider_bg_746.gif) repeat-y;
+}
+.sortable_gamelist_footer{
+height:10px;
+background:#fff url(http://i.realone.com/games/images/feature_slider_footer_746.gif) no-repeat top left; 
+line-height:0;
+border:0px solid #ccc;
+}
+.pagination_links{
+font-size:120%;
+font-weight:bold;
+}
+
+/* Games Table */
+#games_table_filter{
+width: 100%;
+border: 0px solid #999;
+background: #fff;
+font-size:80%;
+}
+#showingBy{
+font-size:130%;
+font-weight:bold;
+}
+#games_table_filter .left{
+margin:8px;
+float:left;
+}
+#games_table_filter .left div{
+padding:4px 0;
+}
+#games_table_filter .right{
+margin:8px;
+float:right;
+}
+#games_table_filter .right div{
+padding:4px 0;
+}
+#games_table {
+line-height: 1.5em;
+background: #ecf5ff;
+margin:0 auto 5px auto;
+width:710px;
+}
+#games_table th img{
+border:0px;
+}
+.sortable_gamelist_content table {
+width: 100%;
+border: 1px solid #8fc6ff;
+background: #fff;
+}
+.sortable_gamelist_content table th, .sortable_gamelist_content table td {
+margin: 0;
+padding: 6px 20px;
+text-align: center;
+border-bottom: 1px solid #8fc6ff;
+}
+.sortable_gamelist_content table th {
+color: #000;
+background: #ecf5ff;
+}
+.sortable_gamelist_content table .name {
+text-align: left;
+}
+.sortable_gamelist_content table tr {
+background: #fff;
+}
+.sortable_gamelist_content table tr.alt {
+background: #ecf5ff;
+}
+.sortable_gamelist_content table td a {
+display: block;
+}
+#games_table .thumbnail{
+margin-right:5px;
+border:0;
+}
+#games_table_pagination{
+text-align:right;
+padding:4px 50px 4px 0;
+font-size:80%;
+border:0px solid #000;
+}
+.previous_spacing{
+margin-right:20px;
+}
+/* Box */
+.box {
+  margin: 0 5px 5px 0;
+  padding: 0;
+  background: url(http://i.realone.com/games/images/rounded-right.gif) top right no-repeat;
+  } 
+.desc {
+  margin: 0;
+  padding: 8px 9px 0 9px;
+  background: url(http://i.realone.com/games/images/rounded-left.gif) top left no-repeat;
+  }
+.link {
+  text-align:center;
+  margin: 0;
+  padding: 0 0 0 9px;
+  background: url(http://i.realone.com/games/images/rounded-left.gif) bottom left no-repeat;
+  }
+.link em {
+  display: block;
+  padding: 0 9px 8px 0;
+  font-style: normal;
+  background: url(http://i.realone.com/games/images/rounded-right.gif) bottom right no-repeat;
+  }
+
+/* footer */
+#footer {
+width:758px;
+border: 1px solid #8fc6ff;
+border-bottom:0;
+border-top: 1px solid #8fc6ff;
+margin:0;
+padding:10px 0 2px 0;
+background: #fff;
+}
+#footer ul{
+display:inline;
+list-style:none;
+float:left;
+line-height:1.8em;
+width:160px;
+margin:0;
+padding:0 0 0 16px;
+}
+#footer .footerLink{
+display:inline;
+list-style:none;
+float:left;
+line-height:1.8em;
+width:160px;
+margin:0;
+padding:0 0 0 16px;
+}
+#footerdata{
+font-size:70%;
+padding:10px 10px 0 10px;
+border: 0px solid #000;
+}
+#footer-etrust{
+border: 0px solid #000;
+width:95px;
+margin:0px;
+padding:0px;
+float:left;
+}
+#footer-etrust img{
+float:left;
+border:0px;
+}
+#footer-desc{
+border: 0px solid #000;
+width:300px;
+margin:0px;
+float:left;
+}
+#footer-bbb{
+border: 0px solid #000;
+width:230px;
+margin:0px;
+float:right;
+}
+#footer-bbb img{
+float:right;
+border:0px;
+}
+#footerbar{
+background:#fff url(http://i.realone.com/games/images/masterSprite.gif) no-repeat 0 0;
+background-position:0 -20px;
+width:760px;
+height:20px;
+color:#666;
+text-align:center;
+font-size:80%;
+margin-bottom:10px;
+padding:0;
+}
+#footerbar div{
+padding-top:4px;
+}
+/* End of Footer */
+
+
+/* Navigation Tabs */
+
+/* this block of CSS controls the tabs */
+
+/**
+ * Base styles for Tab Navigation standard
+ * 
+ * navset: container for tabs and optional subtabs
+ * pri: primary tab navigation 
+ * sec: secondary tab navigation
+ * on: selected tab
+ * orphan: optional non-tab link at end of list
+ * first: Hook for first subtab link
+ *
+ * Usage:
+ *    <div class="navset">
+ *        <ul class="pri">
+ *           <li><a><em>Home</em></a></li> (EM implies that these are more than just linked list items)
+ *           <li class="on"><strong><em>News</em></strong></li> (STRONG emphasizes selected state)
+ *           ...
+ *        </ul> 
+ *        <ul class="sec">
+ *           <li><a>lorem</a></li>
+ *           <li class="on"><strong>lorem</strong></li>
+ *           ...    
+ *        </ul> 
+ *     </div>
+ *
+ */
+ 
+/* base styles for extending/overriding */
+
+/* primary tabs */
+.navset {border:1px solid #8fc6ff; border-top:0;background:#fff url(http://i.realone.com/games/images/masterSprite.gif) no-repeat 0 0;
+background-position:0 -100px;
+}
+.navset h3, .navset h4 {position:absolute;left:-1000em;margin:0;}
+.navset .hd li em {font-weight:bold;}
+.navset .hd li a {color:#467bb1; text-decoration:none;}
+.navset .hd li a:hover {color:#467bb1; text-decoration:underline;}
+.navset .hd li.on strong, .navset .hd li.on strong a {color:#000;} /* selected tab */
+.navset .hd li.on a:hover, .navset .hd li.on a:hover {text-decoration:none;}
+.navset .hd li.on strong {border-bottom:1px solid #ecf5ff;} /* border-color should match selected color */
+.navset .hd li.orphan, .navset .hd li.orphan a {color:#999;}
+
+/* bg images, defaults to #999 border-color on white bg */
+.navset .hd li.on  a, .navset .hd  li.on strong {background:transparent url(http://i.realone.com/games/images/navtabs_right_on.gif) no-repeat top right;}
+.navset .hd li.on em {background:transparent url(http://i.realone.com/games/images/navtabs_left_on.gif) no-repeat;}
+
+.navset .hd li a, .navset .hd li strong {background:transparent url(http://i.realone.com/games/images/navtabs_right_off.gif) no-repeat top right;}
+.navset .hd li em {background:transparent url(http://i.realone.com/games/images/navtabs_left_off.gif) no-repeat;}
+
+/* secondary tabs */
+.navset .bd ul {background-color:#ecf5ff;border-color:#ecf5ff;}
+.navset .bd li, .navset .bd li a {font-size:95%;}
+.navset li.on, .navset li.on strong {font-weight:bold;}
+.navset .bd li {border-color:#ccc;} /* pipe divider */
+
+/* end base styles */
+
+/* Network tab standards, shouldn't change */
+
+/* shared pri and sec */
+.navset {width:758px;} /* IE: width */
+.navset a {text-decoration:none; cursor:pointer;}
+.navset ul, .navset li {margin:0;padding:0;list-style:none;}
+.navset li {float:left;display:inline;}
+.navset li a:hover {text-decoration:underline;}
+.navset ul:after {clear:both;content:'.';display:block;height:0;visibility:hidden;} /* clear non-IE */
+.navset ul {zoom:1;} /* clear IE */
+
+/* primary tabs */
+.navset .hd ul {font-size:110%;margin-bottom:-1px;margin-left:5px;padding-left:.3em;position:relative;} /* IE quirks mode: relative */
+.navset .hd li {margin-right:5px;padding-top:5px;}
+.navset .hd li.on strong a {cursor:pointer;}
+.navset .hd li a, .navset .hd li strong, .navset .hd li em {display:block;}
+.navset .hd li a, .navset .hd li strong {*display:inline-block;}  /* IE: 100% clickable */
+.navset .hd li em {font-style:normal;padding:6px 12px;}
+.navset .hd li.orphan, .navset .hd li.orphan a, .navset .hd li.orphan em {background:transparent none;border-width:0;margin:0;}
+
+/* secondary tabs */
+.navset .bd ul {border-top:1px solid #c0e0fe;font-size:110%;font-weight:bold;margin:0;padding:8px 0 7px 2px;}
+.navset .bd li {border-right-style:solid;border-right-width:1px;display:inline;padding:0 1em;}
+.navset .bd li.nav_selected{background:#c0e0fd;color:#000;}
+.navset .bd li.first {padding-left:0;border:0;}
+
+/* Cash Page */
+#cashPage .module { 
+width: 180px; /* intended total box width - padding-right(next) */ 
+/*width: 180px; /* IE Win = width - padding */ 
+padding-right: 0px; /* the gap on the right edge of the image (not content padding) */ 
+margin:0 4px 5px 0px; /* use to position the box */ 
+float:left;
+border:0px solid #000;
+} 
+#cashPage .game_list{
+height:66px;
+}
+#cashGameListHeader{
+margin-right:5px;
+width:440px;
+}
+#cash_productpage .module{
+width:440px;
+}
+#cash_productpage .module_body{
+min-height:300px;
+}
+#cash_productpage .cash_productpage_leftdiv{
+float:left;
+width:240px;
+margin:10px 0 0 5px;
+}
+#cash_productpage .cash_productpage_leftdiv div{
+line-height:1.4em;
+}
+#cash_productpage .cash_productpage_rightdiv{
+border:0px solid #000;
+float:left;
+margin:10px 0 0 0;
+}
+/* Help pages */
+
+ 
+.linkSection { 
+width: 240px; /* intended total box width - padding-right(next) */ 
+/*width: 240px; /* IE Win = width - padding */ 
+padding-right: 0px; /* the gap on the right edge of the image (not content padding) */ 
+margin:0 5px 5px 0px; /* use to position the box */ 
+float:left;
+border:0px solid #000;
+} 
+/* set the top-right image */ 
+.linkSection_head { 
+background-position: top right; 
+margin-right: -0px; /* pull the right image over on top of border */ 
+padding-right: 10px; /* right-image-gap + right-inside padding */ 
+border:0px solid #000;
+} 
+/* set the top-left image */ 
+.linkSection_head h2 { 
+background-position: top left; 
+margin: 0; /* reset main site styles*/ 
+border: 0; /* ditto */ 
+padding: 5px 0 5px 7px; /* padding-left = image gap + interior padding ... no padding-right */ 
+height: auto !important; height: 1%; /* IE Holly Hack */ 
+border:0px solid #000;
+font-size:105%;
+} 
+/* set the lower-left corner image */ 
+.linkSection_body { 
+background-position: bottom left; 
+margin-right: 10px; /* interior-padding right */ 
+padding: 5px 0 8px 7px; /* mirror .cssbox_head right/left */ 
+border:0px solid #000;
+}
+.linkSection ul {
+margin: 0;
+padding: 5px;
+border:0px solid #000;
+list-style: none;
+}
+.linkSection li {
+margin: 0 0 4px 0; 
+padding: 0;
+} 
+
+.helpCollShim {
+width : 15px;
+float: left;
+}
+
+#helpBody h1{
+font-size:150%
+}
+/* SiteMap */
+#sitemap_nav{
+border: 0px solid #000;
+padding:5px; 
+float: left;
+width:125px;
+margin:0 5px;
+line-height:1.3em;
+}
+#sitemap .margin{
+margin-left:8px;
+margin-bottom:2px;
+}
+#sitemap hr{
+border: 1px solid #ccc;
+margin:2px 0 5px 0;
+}
+.sitemap_wrapper{
+float:left;
+width:210px;
+margin-right:5px;
+border:0px solid #000;
+}
+.sitemap_header{
+text-align:left;
+height:24px;
+background:#fff url(http://i.realone.com/games/images/feature_slider_header_210.gif); 
+background-repeat:no-repeat;
+}
+.sitemap_content{
+border:0px solid #ccc;
+border-top:0;
+padding:10px 0;
+background:#fff;
+background: url(http://i.realone.com/games/images/feature_slider_bg_210.gif) repeat-y;
+}
+.sitemap_wrapper ul{
+margin-top:0px;
+}
+.sitemap_footer{
+height:10px;
+background:#fff url(http://i.realone.com/games/images/feature_slider_footer_210.gif) no-repeat top left; 
+line-height:0;
+border:0px solid #ccc;
+}
+
+
+BODY.onlinePlayPageBody {
+margin:0px 0px 0px 0px;
+background:#f6fbfe url(http://i.realone.com/games/images/OPPBack.gif) repeat-x;
+}
+Div.onlineLogo{
+margin:10px 20px 0 0px;
+float:left
+}
+
+DIV.onlinePlayPageHeaderCont {
+height:169px;
+padding:7px 0px 0px 0px;
+background:transparent url(http://i.realone.com/games/images/OPPHeadB.gif) repeat-x;
+margin:0px auto 10px auto;
+}
+DIV.onlinePlayPageHeaderLeft {
+width:10px;
+height:77px;
+background:transparent url(http://i.realone.com/games/images/OPPHeadL.gif) no-repeat bottom;
+font-size:0px;
+float:left;
+}
+DIV.onlinePlayPageHeaderRight {
+width:10px;
+height:77px;
+background:transparent url(http://i.realone.com/games/images/OPPHeadR.gif) no-repeat bottom;
+font-size:0px;
+float:right;
+}
+DIV.onlinePlayPageBannerCont {
+width:737px;
+height:91px;
+padding:1px 0px 0px 17px;
+background:transparent url(http://i.realone.com/games/images/OPPBannerBack.gif) no-repeat;
+margin:0px auto 0px auto;
+}
+DIV.onlinePlayPageHeaderLogo {
+display:none;
+}
+DIV.onlinePlayPageHeaderNowPlayingCont {
+width:554px;
+height:40px;
+margin:7px auto 0px auto;
+padding:21px 0px 0px 10px;
+line-height:40px;
+background:transparent url(http://i.realone.com/games/images/OPPNP.gif) no-repeat;
+color:#336699;
+font-size:18px;
+}
+DIV.onlinePlayPageBodyOuterCont {
+margin:0px auto 10px auto;
+background:#ffffff url(http://i.realone.com/games/images/OPPBodyBorder.gif) repeat-y top left;
+}
+DIV.onlinePlayPageBodyInnerCont {
+background:transparent url(http://i.realone.com/games/images/OPPBodyBorder.gif) repeat-y top right;
+}
+DIV.onlinePlayPageBodyTop {
+height:11px;
+background:transparent url(http://i.realone.com/games/images/OPPBodyBorder.gif) repeat-x top left;
+}
+DIV.onlinePlayPageBodyTopLeft {
+width:11px;
+height:11px;
+background:transparent url(http://i.realone.com/games/images/OPPBodyTL.gif) no-repeat;
+font-size:0px;
+float:left;
+}
+DIV.onlinePlayPageBodyTopRight {
+width:11px;
+height:11px;
+background:transparent url(http://i.realone.com/games/images/OPPBodyTR.gif) no-repeat;
+font-size:0px;
+float:right;
+}
+DIV.onlinePlayPageInterAdCont {
+margin:35px auto 50px auto;
+}
+DIV.onlinePlayPageLoadTop {
+height:28px;
+line-height:28px;
+text-align:center;
+color:#888888;
+font-size:11px;
+font-weight:bold;
+}
+DIV.onlinePlayPageInterAdOuterCont {
+background:transparent url(http://i.realone.com/games/images/OPPDVBorder.gif) repeat-y top left;
+}
+DIV.onlinePlayPageInterAdInnerCont {
+background:transparent url(http://i.realone.com/games/images/OPPDVBorder.gif) repeat-y top right;
+}
+DIV.onlinePlayPageInterAdTop {
+height:11px;
+background:transparent url(http://i.realone.com/games/images/OPPDVBorder.gif) repeat-x top left;
+}
+DIV.onlinePlayPageInterAdTopLeft {
+width:11px;
+height:11px;
+background:transparent url(http://i.realone.com/games/images/OPPDVTL.gif) no-repeat;
+font-size:0px;
+float:left;
+}
+DIV.onlinePlayPageInterAdTopRight {
+width:11px;
+height:11px;
+background:transparent url(http://i.realone.com/games/images/OPPDVTR.gif) no-repeat;
+font-size:0px;
+float:right;
+}
+DIV.onlinePlayPageInterCont {
+width:300px;
+height:250px;
+margin:54px auto 54px auto;
+}
+DIV.onlinePlayPageInterAdBottom {
+height:11px;
+background:transparent url(http://i.realone.com/games/images/OPPDVBorder.gif) repeat-x bottom left;
+}
+DIV.onlinePlayPageInterAdBottomLeft {
+width:11px;
+height:11px;
+background:transparent url(http://i.realone.com/games/images/OPPDVBL.gif) no-repeat;
+font-size:0px;
+float:left;
+}
+DIV.onlinePlayPageInterAdBottomRight {
+width:11px;
+height:11px;
+background:transparent url(http://i.realone.com/games/images/OPPDVBR.gif) no-repeat;
+font-size:0px;
+float:right;
+}
+DIV.onlinePlayPageLoadAdMSG {
+height:28px;
+line-height:28px;
+text-align:center;
+color:#888888;
+font-size:11px;
+font-weight:normal;
+}
+DIV.onlinePlayPageLoadBottom {
+height:40px;
+padding-top:15px;
+text-align:center;
+color:#888888;
+font-size:25px;
+font-weight:bold;
+}
+DIV.onlinePlayPageLoadBar {
+width:100px;
+height:18px;
+margin:10px auto 0px auto;
+background:transparent url(http://i.realone.com/games/images/OPPLoadBar15.gif) no-repeat;
+}
+DIV.onlinePlayPageGameContentCont {
+padding:0px 11px 0px 11px;
+float:left;
+}
+DIV.onlinePlayPageOptimizedMSG {
+height:18px;
+line-height:18px;
+padding:10px 0px 0px 0px;
+text-align:center;
+font-size:11px;
+font-weight:bold;
+color:#888888;
+}
+DIV.onlinePlayPageDeluxeVersionOuterCont {
+margin:10px 0px 0px 0px;
+background:transparent url(http://i.realone.com/games/images/OPPDVBorder.gif) repeat-y top right;
+}
+DIV.onlinePlayPageDeluxeVersionInnerCont {
+background:transparent url(http://i.realone.com/games/images/OPPDVBorder.gif) repeat-y top left;
+}
+DIV.onlinePlayPageDeluxeVersionTop {
+height:11px;
+background:transparent url(http://i.realone.com/games/images/OPPDVBorder.gif) repeat-x top left;
+}
+DIV.onlinePlayPageDeluxeVersionTopLeft {
+width:11px;
+height:11px;
+background:transparent url(http://i.realone.com/games/images/OPPDVTL.gif) no-repeat;
+font-size:0px;
+float:left;
+}
+DIV.onlinePlayPageDeluxeVersionTopRight {
+width:11px;
+height:11px;
+background:transparent url(http://i.realone.com/games/images/OPPDVTR.gif) no-repeat;
+font-size:0px;
+float:right;
+}
+DIV.onlinePlayPageDeluxeVersionText {
+width:100px;
+padding:0px 0px 0px 20px;
+margin-right:6px;
+background:transparent url(http://i.realone.com/games/images/OPPDVArrow.gif) no-repeat 10px 2px;
+color:red;
+font-size:12px;
+font-weight:bold;
+float:right;
+}
+IMG.onlinePlayPageDeluxeVersionGameImage {
+width:146px;
+height:110px;
+border:1px solid #888888;
+float:left;
+margin:0 0 0 10px;
+}
+DIV.onlinePlayPageDeluxeVersionGameInfoCont {
+width:260px;
+padding:0px 0px 0px 10px;
+float:left;
+}
+DIV.onlinePlayPageDeluxeVersionGameName{
+float:left;
+width:500px;
+height:50px;
+margin:10px auto 10px auto;
+padding:0;
+background:url(http://i.realone.com/games/images/title_module_bg_500.gif) no-repeat top left; 
+border:0px solid #000;
+}
+DIV.onlinePlayPageDeluxeVersionGameName h3{
+padding:0;
+margin:14px 15px 0 15px;
+border:0px solid #000;
+}
+DIV.onlinePlayPageDeluxeVersionGameDesc {
+font-size:12px;
+font-weight:bold;
+padding:3px 0px 7px 0px;
+}
+DIV.onlinePlayPageDLButtonOff {
+}
+DIV.onlinePlayPageDLButtonOn {
+}
+DIV.onlinePlayPageDLButtonDown {
+}
+DIV.onlinePlayPageDeluxeVersionBottom {
+height:11px;
+background:transparent url(http://i.realone.com/games/images/OPPDVBorder.gif) repeat-x bottom left;
+}
+DIV.onlinePlayPageDeluxeVersionBottomLeft {
+width:11px;
+height:11px;
+background:transparent url(http://i.realone.com/games/images/OPPDVBL.gif) no-repeat;
+font-size:0px;
+float:left;
+}
+DIV.onlinePlayPageDeluxeVersionBottomRight {
+width:11px;
+height:11px;
+background:transparent url(http://i.realone.com/games/images/OPPDVBR.gif) no-repeat;
+font-size:0px;
+float:right;
+}
+DIV.onlinePlayPageSkyCont {
+width:161px;
+height:609px;
+padding:17px 0px 0px 1px;
+background:transparent url(http://i.realone.com/games/images/OPPSkyBack.gif) no-repeat;
+float:left;
+}
+DIV.onlinePlayPageBodyBottom {
+height:11px;
+background:white url(http://i.realone.com/games/images/OPPBodyBorder.gif) repeat-x bottom left;
+}
+DIV.onlinePlayPageBodyBottomLeft {
+width:11px;
+height:11px;
+background:transparent url(http://i.realone.com/games/images/OPPBodyBL.gif) no-repeat;
+font-size:0px;
+color:white;
+float:left;
+}
+DIV.onlinePlayPageBodyBottomRight {
+width:11px;
+height:11px;
+background:transparent url(http://i.realone.com/games/images/OPPBodyBR.gif) no-repeat;
+font-size:0px;
+float:right;
+}
+DIV.onlinePlayPageHelpLinkContainer {
+height:20px;
+margin:10px auto 10px auto;
+text-align:right;
+}
+
+/* -- modal dialog styles -- */
+
+
+.signinIframeHeader
+{height: 37px;
+width: 500px;
+margin: 0px;}
+
+.signinIframeFooter
+{height: 17px;
+width: 500px;
+margin: 0px;}
+
+
+#login-wrapper h1,
+#registration-wrapper h1,
+#login-complete-wrapper h1 
+	{font-size: 16px;
+    margin: 0px 0px 0px 0px;
+    text-align: left;}
+
+.closer
+	{float: right;
+    text-decoration: none;
+    margin: 7px 7px 7px 0px;}
+
+.closer img
+	{border: none;
+	height: 23px;
+    width: 22px;}
+
+.closerText
+	{position:relative;
+	top:-36px;
+	left:200px;
+	font-weight:bold;}
+	
+.modalIframe
+    {display: block;
+    border: none !important;
+    margin: 0px;
+    width: 100%;}
+    
+/* Privacy Policy */
+#privacy_page{
+line-height:1.4em;
+margin:10px;
+}
+.privacyTitle { 
+font-weight:bold;
+}
+.px14{
+font-size:110%;
+}
+.privacyDesc { 
+padding:5px 0px 10px 20px;
+}
+.privacyBullet { 
+margin:5px 0px 0px 20px; 
+padding:0px 0px 0px 10px; 
+background:white url(http://i.realone.com/games/images/bullet.gif) no-repeat 0px 4px;}
+
+/* 404 Pages*/ 
+#errorPage{
+width:680px;
+margin: 30px auto 80px auto;
+}
+#errorPage .error{
+color:red;
+margin-bottom:0px;
+padding-bottom:0;
+}
+
+/* Game Download Tool Tip Styles */
+.gameToolTip			{position:absolute;top:0px;left:0px;display:none;z-index:10;}
+.gameToolTipText		{width:360px;height:40px;margin-top:16px;margin-left:10px;}
+.gameToolTipImage		{width:380px;margin-top:5px;text-align:center;}
+.gameToolTipGuarantee	{float:left;margin-left:28px;width:225px;font-size:10px;}
+.gameToolTipBBSeal		{float:right;margin-right:10px;}
+
+/* GamePass Promo Styles */
+.GP_Promo_BG {
+background: transparent url(http://i.realone.com/games/images/gpPromoBg_281x496.gif) no-repeat;
+width: 281px;
+height: 496px;
+}
+
+#promotionPageGamePassModule { color:#01497F;margin:0px auto 0px auto;width:750px;padding:10px 5px 5px 0px; }	
+#promotionGamePassModule { width:750px;height:550px;}
+#promotionGamePassShortDesc {font-size:12px;text-align:left;padding:1px 10px 10px 10px;}
+#promotionPageButton {margin:10px auto 15px auto}
+#promotionGamePassCopy {width:277px;height:305px;margin-top:135px;margin-bottom:20px;}	
+#promotionGamePassCopyContainer { float:right;height:496px;width:281px;margin:20px 7px 0px 0px;}
+#promotionGamePassRule {width:219px;margin:20px 20px 15px 25px;}
+#promotionGamePassUL {text-indent:-1px;margin-left:10px;padding-left:7px;margin-top:6px;margin-bottom:6px;font-size:10px;}
+#promotionGamePassLearnMore {height:37px;padding:5px;margin:0px auto 0px auto;text-align:center;}
+
+#promotionPageButton a img {
+border: 0px;
+}
+
+.gp2FGBackLgHead2 {
+background: transparent url(http://i.realone.com/games/images/gp2FGBackLgHead2.jpg) no-repeat;
+width: 740px;
+height: 182px;
+}
+
+.gp2FGBackLgButton {
+background: transparent url(http://i.realone.com/games/images/gp2FGBackLgButton.jpg) no-repeat;
+width: 740px;
+height: 190px;
+}
+
+.gp2FGBackLgGames_supercollapseii {
+background: transparent url(http://i.realone.com/games/images/gp2FGBackLgGames_supercollapseii.jpg) no-repeat;
+}
+
+.gpBullet {
+background:url(http://i.realone.com/games/images/gpBullet.gif) no-repeat 0px 3px;
+}
+
+.gpBackLgTest {
+background: transparent url(http://i.realone.com/games/images/gpBackLgTest.jpg) no-repeat;
+width: 740px;
+height: 104px;
+}
+
+/* For banner ad at the bottom of the home page */
+#gg_banner {
+	float: left; 
+	margin-right: 5px; 
+	margin-top: 10px;
+	width: 728px;
+	height: 90px;
+	}
+	
+#gg_banner a {
+	border: 0px;
+	}
+	
+#gg_banner a img {
+	border: 0px;
+	}

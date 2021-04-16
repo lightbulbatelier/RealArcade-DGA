@@ -1,0 +1,1136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"x>
+
+<html>
+
+<head>
+ 
+	<title>Help Desk</title>
+
+	<meta http-equiv="Content-Type" content="text/html; CHARSET=UTF-8">
+
+	<link rel="stylesheet" href="newstyles.css">
+
+	<script src="master.js"></script>
+
+</head> 
+
+<body bgcolor="white" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" class="content">
+<object id="RNGCIEPLUG" width="0" height="0" classid="CLSID:A5DC33CE-214B-4c26-8596-8A45456C9EB8"></object> 
+<script language="JavaScript">
+//  code to determine Distcode and display Flip or non-Flip html ----------------->
+{
+	var arcadeInstalled = 0;
+	var undefined;
+	if ((navigator.userAgent.charAt(8)) >= ('3'))
+	{
+		  var  strRNGCVersion= "ZERO";
+		  strRNGCVersion = RNGCIEPLUG.RealArcadeVersion;
+		 /*
+		  if ( undefined == strRNGCVersion )
+		  {
+			document.write( 'RealOne Arcade is not installed.' );
+		  }
+		  else 
+		  {
+    			document.write( 'RealOne Arcade Version is: ' + 
+					( strRNGCVersion>> 28 ) + '.' +
+					( ( strRNGCVersion& 0xFF00000 ) >> 20 ) + '.' + 
+					( ( strRNGCVersion& 0xFF000 ) >> 12 ) + '.' + 
+					( strRNGCVersion& 0xFFF ) + '<BR>' );
+		  }
+		*/ 
+		  var  strRNGCDistCode= "NULL";
+		  strRNGCDistCode= RNGCIEPLUG.RealArcadeDistCode;
+	}
+}
+</script>
+<script src="getcurrency.js"></script>
+<script language="JavaScript">
+	var currency = GetCurrencyFromDist();
+	if ( currency != "USD" ){
+		document.getElementById('FAQLink1').href="http://www.realarcade.com/helppage";
+		document.getElementById('FAQLink2').href="http://www.realarcade.com/helppage";
+		if ( currency == "GBP" ) {
+			document.getElementById('customerServiceLink').href="http://uk.real.com/help/";
+		} else if ( currency == "EUR_IT" ) {
+			document.getElementById('customerServiceLink').href="http://italy.real.com/help/";
+		} else if ( currency == "EUR_NL" ) {
+			document.getElementById('customerServiceLink').href="http://netherlands.real.com/help/";
+		} else if ( currency == "USD_BR" ) {
+			document.getElementById('customerServiceLink').href="http://brazil.real.com/help/";
+		} else {
+			document.getElementById('customerServiceLink').href="http://service.real.com/international.html";
+		}
+	}
+	
+</script>
+	<table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+		<tr> 
+ 
+			<td width="100%" colspan="3">
+
+				<table cellspacing="0" cellpadding="0" border="0" width="100%" class="topheader">
+
+					<tr>
+
+						<td width="100%" align="left" valign="center" nowrap><span class="pagetitle">Help Desk</span></td>
+
+						<td width="1" valign="top" align="right" class="topheader"><img src="images/spacer.gif" width="1" height="30" border="0" alt=""></td>
+
+						<td width="300" rowspan="1" bgcolor="#D6D7D6" align="right"></td>
+
+					</tr>
+ 
+					<tr>
+
+						<td bgcolor="#D6D7D6" colspan="3"><img src="images/spacer.gif" width="1" height="5" border="0" alt=""></td>
+
+					</tr>
+
+				</table>
+
+			</td>
+
+		</tr>
+
+		<tr>
+
+			<td width="-1%" valign="top">
+
+				<table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+					<!-- BEGINNING OF UPPER LEFT SECTION -->
+
+					<tr>
+
+						<td colspan="5" bgcolor="white" width="100%"><img src="images/spacer.gif" width="5" height="5" alt=""></td>
+
+					</tr>
+
+					<tr>
+
+						<td colspan="5" valign="middle">
+
+							<table width="400" border="0" cellpadding="0" cellspacing="0">
+
+								<!----- BEGINNING OF TOP RealOne ARCADE QUESTIONS ------>
+
+								<tr>
+
+									<td width="5" bgcolor="white"><img src="images/spacer.gif" width="5" height="5" alt=""></td>
+
+									<td width="-1%" valign="top" colspan="3">
+
+										<p class="heading1">TOP QUESTIONS</p>
+
+										<p class="body1"><img src="images/gamecomm_mbbullet.gif" width="9" height="15" alt="" border="0" align="top">&nbsp;<a href="javascript:void(0)" onclick="window.open('question01.htm','','scrollbars=yes,rezisable=no,width=360,height=600,left=+left+,top=+top')" class="body1">How do I redownload a game I've bought and lost?</a></p>
+										
+										<p class="body1"><img src="images/gamecomm_mbbullet.gif" width="9" height="15" alt="" border="0" align="top">&nbsp;<a href="javascript:void(0)" onclick="window.open('question04.htm','','scrollbars=yes,rezisable=no,width=360,height=600,left=+left+,top=+top')" class="body1">How do I get my free monthly GamePass game?</a></p>
+
+										<p class="body1"><img src="images/gamecomm_mbbullet.gif" width="9" height="15" alt="" border="0" align="top">&nbsp;<a href="javascript:void(0)" onclick="window.open('question02.htm','','scrollbars=yes,rezisable=no,width=360,height=600,left=+left+,top=+top')" class="body1">Why can't RealArcade tell that I'm online?</a></p>
+
+										<p class="body1"><img src="images/gamecomm_mbbullet.gif" width="9" height="15" alt="" border="0" align="top">&nbsp;<a href="javascript:void(0)" onclick="window.open('question03.htm','','scrollbars=yes,rezisable=no,width=360,height=600,left=+left+,top=+top')" class="body1">Having problems downloading your games?</a></p>
+
+										<p class="body1">Answers to more Frequently Asked Questions: <a id="FAQLink1" href="http://switchboard.real.com/arcade/sites.html?ID=500" target="_blank" class="body1">Click here</a></p>
+
+									</td>
+
+									<td width="5" bgcolor="white"><img src="images/spacer.gif" width="5" height="5" alt=""></td>
+
+								</tr>
+
+								<tr>
+
+									<td width="5" bgcolor="white"><img src="images/spacer.gif" width="5" height="10" alt=""></td>
+
+									<td colspan="3" width="5" bgcolor="white"><img src="images/spacer.gif" width="5" height="10" alt=""></td>
+
+									<td width="5" bgcolor="white"><img src="images/spacer.gif" width="5" height="10" alt=""></td>
+
+								</tr>
+
+								<tr>
+
+									<td width="5" bgcolor="white"><img src="images/spacer.gif" width="5" height="1" alt=""></td>
+
+									<td colspan="3" width="5" bgcolor="#555555"><img src="images/spacer.gif" width="5" height="1" alt=""></td>
+
+									<td width="5" bgcolor="white"><img src="images/spacer.gif" width="5" height="1" alt=""></td>
+
+								</tr>
+
+								<tr>
+
+									<td width="5" bgcolor="white"><img src="images/spacer.gif" width="5" height="10" alt=""></td>
+
+									<td colspan="3" width="5" bgcolor="white"><img src="images/spacer.gif" width="5" height="10" alt=""></td>
+
+									<td width="5" bgcolor="white"><img src="images/spacer.gif" width="5" height="10" alt=""></td>
+
+								</tr>
+
+								<!----- END OF TOP ARCADE QUESTIONS ----->
+								
+								<!----- BEGINNING OF RealArcade BOX ------>
+
+								<tr>
+
+									<td width="5" bgcolor="white"><img src="images/spacer.gif" width="5" height="5" alt=""></td>
+
+									<td width="-1%" valign="top">
+
+										<table border="0" cellpadding="0" cellspacing="0" bgcolor="white">
+											<tr>
+
+												<td width="5" nowrap><img src="images/spacer.gif" width="1" height="10" alt=""></td>
+
+												<td nowrap><img src="images/spacer.gif" width="1" height="10" alt=""></td>
+
+												<td width="5" nowrap><img src="images/spacer.gif" width="1" height="10" alt=""></td>
+
+											</tr>
+											
+											<tr>
+
+												<td width="5" nowrap><img src="images/corner_upper_left3.gif" width="5" height="5" alt=""></td>
+
+												<td nowrap background="images/upper_bar_4theborder.gif"><img src="images/spacer.gif" width="1" height="5" alt=""></td>
+
+												<td width="5" nowrap><img src="images/corner_upper_right3.gif" width="5" height="5" alt=""></td>
+
+											</tr>
+
+											<tr>
+
+												<td width="5" nowrap background="images/left_bar.gif"><img src="images/spacer.gif" width="5" height="25" alt=""></td>
+
+												<td align="left" valign="top" nowrap>
+
+													<!---------------------------------BEGINNING OF INNER CONTENT------------------------------------->
+
+													<table width="100%" cellspacing="0" cellpadding="0" border="0">
+
+														<tr>
+
+															<td align="center"><a href="http://switchboard.real.com/arcade/sites.html?ID=500" target="_blank"><img src="images/roalogo.gif" width="133" height="33" alt="" border="0"></a></td>
+
+														</tr>
+
+													</table>
+
+													<!----------------------------END OF INNER CONTENT------------------------------------------></td>
+
+												<td width="5" nowrap background="images/right_bar.gif"><img src="images/spacer.gif" width="5" height="5" alt=""></td>
+
+											</tr>
+
+											<tr>
+
+												<td width="5" nowrap><img src="images/corner_lower_left3.gif" width="5" height="5" alt=""></td>
+
+												<td nowrap background="images/lower_bar.gif"><img src="images/spacer.gif" width="1" height="5" alt=""></td>
+
+												<td width="5" nowrap><img src="images/corner_lower_right3.gif" width="5" height="5" alt=""></td>
+
+											</tr>
+
+										</table>
+
+										<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="white">
+
+											<tr>
+
+												<td><img src="images/spacer.gif" width="3" height="3" alt=""></td>
+
+											</tr>
+
+										</table>
+
+									</td>
+
+									<td width="5" bgcolor="white"><img src="images/spacer.gif" width="5" height="25" alt=""></td>
+
+									<td bgcolor="white" width="100%" valign="middle" class="body1">Get answers to questions about <br><a id="FAQLink2" href="http://switchboard.real.com/arcade/sites.html?ID=501" target="_blank" class="body1">RealArcade</a></td>
+
+									<td width="5" bgcolor="white"><img src="images/spacer.gif" width="5" height="25" alt=""></td>
+
+								</tr>
+
+								<tr>
+
+									<td width="1" bgcolor="white"><img src="images/spacer.gif" width="1" height="5" alt=""></td>
+
+								</tr>
+							
+							</table>
+							
+								<!----- END OF RealArcade BOX ----->
+
+								<!----- BEGINNING OF GAMEPASS BOX ------>
+
+							<div id="gamepass_content_table" name="gamepass_content_table" style="position:relative;visibility:visible"> 
+							
+							<table width="400" border="0" cellpadding="0" cellspacing="0">
+
+								<tr>
+
+									<td width="5" bgcolor="white"><img src="images/spacer.gif" width="5" height="5" alt=""></td>
+
+									<td width="-1%" valign="top">
+
+										<table border="0" cellpadding="0" cellspacing="0" bgcolor="white">
+											<tr>
+
+												<td width="5" nowrap><img src="images/spacer.gif" width="1" height="10" alt=""></td>
+
+												<td nowrap><img src="images/spacer.gif" width="1" height="10" alt=""></td>
+
+												<td width="5" nowrap><img src="images/spacer.gif" width="1" height="10" alt=""></td>
+
+											</tr>
+											<tr>
+
+												<td width="5" nowrap><img src="images/corner_upper_left3.gif" width="5" height="5" alt=""></td>
+
+												<td nowrap background="images/upper_bar_4theborder.gif"><img src="images/spacer.gif" width="1" height="5" alt=""></td>
+
+												<td width="5" nowrap><img src="images/corner_upper_right3.gif" width="5" height="5" alt=""></td>
+
+											</tr>
+
+											<tr>
+
+												<td width="5" nowrap background="images/left_bar.gif"><img src="images/spacer.gif" width="5" height="5" alt=""></td>
+
+												<td align="left" valign="top" nowrap>
+
+													<!---------------------------------BEGINNING OF INNER CONTENT------------------------------------->
+
+													<table width="100%" cellspacing="0" cellpadding="0" border="0">
+
+														<tr>
+
+															<td align="center"><a href="realarcade://navigate:helpdesk:gamepasshelp"><img src="images/gamepasslogo.gif" width="133" height="33" alt="" border="0"></a></td>
+
+														</tr>
+
+													</table>
+
+													<!----------------------------END OF INNER CONTENT------------------------------------------></td>
+
+												<td width="5" nowrap background="images/right_bar.gif"><img src="images/spacer.gif" width="5" height="5" alt=""></td>
+
+											</tr>
+
+											<tr>
+
+												<td width="5" nowrap><img src="images/corner_lower_left3.gif" width="5" height="5" alt=""></td>
+
+												<td nowrap background="images/lower_bar.gif"><img src="images/spacer.gif" width="1" height="5" alt=""></td>
+
+												<td width="5" nowrap><img src="images/corner_lower_right3.gif" width="5" height="5" alt=""></td>
+
+											</tr>
+
+										</table>
+
+										<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="white">
+
+											<tr>
+
+												<td><img src="images/spacer.gif" width="3" height="3" alt=""></td>
+
+											</tr>
+
+										</table>
+
+									</td>
+
+									<td width="5" bgcolor="white"><img src="images/spacer.gif" width="5" height="5" alt=""></td>
+
+									<td bgcolor="white" width="100%" valign="middle" class="body1">Find out all about <a href="realarcade://navigate:helpdesk:gamepasshelp" class="body1">GamePass</a>, where you get more games for less money!</td>
+
+									<td width="5" bgcolor="white"><img src="images/spacer.gif" width="5" height="5" alt=""></td>
+
+								</tr>
+
+								<tr>
+
+									<td width="1" bgcolor="white"><img src="images/spacer.gif" width="1" height="5" alt=""></td>
+
+								</tr>
+
+							</table>
+
+							</div>
+							
+								<!----- END OF GAMEPASS BOX ----->
+
+								<!----- BEGINNING OF COMCAST-CONTENT BOX ------>
+								
+							<div id="comcast_content_table" name="comcast_content_table" style="position:none;visibility:hidden;display:none;"> 
+
+							<table width="400" border="0" cellpadding="0" cellspacing="0">
+
+								<tr>
+
+									<td width="5" bgcolor="white"><img src="images/spacer.gif" width="5" height="5" alt=""></td>
+
+									<td width="-1%" valign="top">
+
+										<table border="0" cellpadding="0" cellspacing="0" bgcolor="white">
+
+											<tr>
+
+												<td width="5" nowrap><img src="images/corner_upper_left3.gif" width="5" height="5" alt=""></td>
+
+												<td nowrap background="images/upper_bar_4theborder.gif"><img src="images/spacer.gif" width="1" height="5" alt=""></td>
+
+												<td width="5" nowrap><img src="images/corner_upper_right3.gif" width="5" height="5" alt=""></td>
+
+											</tr>
+
+											<tr>
+
+												<td width="5" nowrap background="images/left_bar.gif"><img src="images/spacer.gif" width="5" height="5" alt=""></td>
+
+												<td align="left" valign="top" nowrap>
+
+													<!---------------------------------BEGINNING OF INNER CONTENT------------------------------------->
+
+													<table width="100%" cellspacing="0" cellpadding="0" border="0">
+
+														<tr>
+
+															<td align="center"><a href="realarcade://navigate:helpdesk:gamepasshelp"><img src="images/gamepasslogo.gif" width="133" height="33" alt="" border="0"></a></td>
+
+														</tr>
+
+													</table>
+
+													<!----------------------------END OF INNER CONTENT------------------------------------------></td>
+
+												<td width="5" nowrap background="images/right_bar.gif"><img src="images/spacer.gif" width="5" height="5" alt=""></td>
+
+											</tr>
+
+											<tr>
+
+												<td width="5" nowrap><img src="images/corner_lower_left3.gif" width="5" height="5" alt=""></td>
+
+												<td nowrap background="images/lower_bar.gif"><img src="images/spacer.gif" width="1" height="5" alt=""></td>
+
+												<td width="5" nowrap><img src="images/corner_lower_right3.gif" width="5" height="5" alt=""></td>
+
+											</tr>
+
+										</table>
+
+										<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="white">
+
+											<tr>
+
+												<td><img src="images/spacer.gif" width="3" height="3" alt=""></td>
+
+											</tr>
+
+										</table>
+
+									</td>
+
+									<td width="5" bgcolor="white"><img src="images/spacer.gif" width="5" height="5" alt=""></td>
+
+									<td bgcolor="white" width="100%" valign="top" class="body1">Find out all about <a href="realarcade://navigate:helpdesk:gamepasshelp" class="body1">GamePass</a>, where you get more games for less money!</td>
+
+									<td width="5" bgcolor="white"><img src="images/spacer.gif" width="5" height="5" alt=""></td>
+
+								</tr>
+
+								<tr>
+
+									<td width="1" bgcolor="white"><img src="images/spacer.gif" width="1" height="5" alt=""></td>
+
+								</tr>
+
+							</table>
+							
+							</div>
+
+								<!----- END OF COMCAST-CONTENT BOX ----->
+							
+							<table width="400" border="0" cellpadding="0" cellspacing="0">
+
+								<tr>
+
+									<td width="5" bgcolor="white"><img src="images/spacer.gif" width="5" height="10" alt=""></td>
+
+									<td colspan="3" width="5" bgcolor="white"><img src="images/spacer.gif" width="5" height="10" alt=""></td>
+
+									<td width="5" bgcolor="white"><img src="images/spacer.gif" width="5" height="10" alt=""></td>
+
+								</tr>
+
+							</table>
+
+						</td>
+
+					</tr>
+
+					<!------------ END OF UPPER LEFT SECTION ------------>
+
+				</table>
+
+			</td>
+
+			<!---------------------------------------BEGINNING OF UPPER RIGHT SECTION-------------------------------------------->
+
+			<td width="-1%" valign="top">
+
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+					<tr>
+
+						<td><img src="images/spacer.gif" width="3" height="5" alt=""></td>
+
+					</tr>
+
+					<tr>
+
+						<td width="100%">
+
+							<table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+								<!----- BEGINNING OF MY ACCOUNT BOX ------>
+
+								<tr>
+
+									<td valign="top" bgcolor="white">
+
+										<table width="192" border="0" cellpadding="0" cellspacing="0" background="images/back_generic.gif">
+
+											<tr>
+
+												<td width="5"><img src="images/upper_left_bar.gif" width="5" height="19" alt=""></td>
+
+												<td width="100%">
+
+													<p class="genretitle">MY ACCOUNT</p>
+
+												</td>
+
+												<td width="5"><img src="images/upper_right_bar.gif" width="5" height="19" alt=""></td>
+
+											</tr>
+
+										</table>
+
+										<table width="192" border="0" cellpadding="0" cellspacing="0" bgcolor="#D6D7D6">
+
+											<tr>
+
+												<td rowspan="2"><img src="images/spacer.gif" width="5" height="0" alt=""></td>
+
+												<td><img src="images/spacer.gif" width="182" height="0" alt=""></td>
+
+												<td rowspan="2"><img src="images/spacer.gif" width="5" height="0" alt=""></td>
+
+											</tr>
+
+											<tr>
+
+												<td align="left" valign="top">
+
+												<!---------------------------------BEGINNING OF INNER CONTENT------------------------------------->
+
+													<table width="100%" cellspacing="0" cellpadding="0" border="0">
+
+														<tr>
+
+															<td>
+
+																<form name="frmLogin" method="post" action="https://account.real.com/acct/login.html?language=en" target="_blank">
+																	<input type="hidden" name="ec_site_code" value="ARCADE"> <input type="hidden" name="url" value="">
+																	<table width="100%" cellspacing="0" cellpadding="0" border="0">
+																		<tr>
+																			<td class="body1">Email address</td>
+																		</tr>
+																		<tr>
+																			<td><input type="text" name="email" size="24" maxlength="50" class="myaccountfields"></td>
+																		</tr>
+																		<tr>
+																			<td class="body1">Password</td>
+																		</tr>
+																		<tr>
+																			<td><input type="password" name="password" size="24" maxlength="35" class="myaccountfields"></td>
+																		</tr>
+																		<tr>
+																			<td align="left" width="200"><input type="submit" name="LogMeIn" value="Sign-In" class="submitbutton">
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="body1" nowrap><font style="font-size : 9px; font-weight: bold;">Forgot your password? <a href="https://store.real.com/fyp/Process.rnce?type=forgetPwd" target="newwindow" class="body2">Click here</a></font><br>
+																			</td>
+																		</tr>
+																		<tr>
+																					<td width="100%"><img src="images/spacer.gif" width="5" height="10" alt=""></td>
+																				</tr>
+																		<tr>
+																					<td width="100%" bgcolor="#555555"><img src="images/spacer.gif" width="5" height="1" alt=""></td>
+																				</tr>
+																		
+																		<tr>
+																					<td width="100%"><img src="images/spacer.gif" width="5" height="5" alt=""></td>
+																				</tr>
+
+																
+																	<tr>
+																		<td class="body1" valign="top">
+																			<table>
+																				<tr>
+																					<td colspan="2" class="body1" valign="top"><b>Sign in to</b></td>
+																				</tr>
+																				<tr>
+																					<td class="body1" valign="top">&#149;</td>
+																					<td class="body1" valign="top">Re-download purchased games</td>
+
+																				</tr>
+																				<tr>
+																					<td class="body1" valign="top">&#149;</td>
+																					<td class="body1" valign="top">Check GamePass status</td>
+																				</tr>
+																				<tr>
+																					<td class="body1" valign="top">&#149;</td>
+																					<td class="body1" valign="top">View billing history</td>
+																				</tr>
+																				<tr>
+																					<td class="body1" valign="top">&#149;</td>
+																					<td class="body1" valign="top">Manage your RealNetworks account information</td>
+																				</tr>
+																				
+																			</table>
+																		</td>
+																	</tr>
+																</table></form>
+
+															</td>
+
+														</tr>
+
+													</table>
+
+													<!----------------------------END OF INNER CONTENT------------------------------------------></td>
+
+											</tr>
+
+
+
+										</table>
+
+										<table width="192" border="0" cellpadding="0" cellspacing="0" bgcolor="white">
+
+											<tr>
+
+												<td><img src="images/spacer.gif" width="3" height="3" alt=""></td>
+
+											</tr>
+
+										</table>
+
+									</td>
+
+								</tr>
+
+								<!----- END OF MY ACCOUNT BOX ----->
+
+								
+
+								<!----- BEGINNING OF DON'T HAVE AN ACCOUNT BOX ------>
+
+								<tr>
+
+									<td width="192" valign="top" bgcolor="white">
+
+										<table width="192" border="0" cellpadding="0" cellspacing="0" bgcolor="#D6D7D6">
+
+
+
+											<tr>
+
+												<td align="center" valign="top" colspan="3">
+
+													<!---------------------------------BEGINNING OF INNER CONTENT------------------------------------->
+
+													<form name="frmLogin2" method="post" action="https://account.real.com/acct/create_newacct.html?language=en&ec_site_code=ARCADE" target="_blank">
+
+													<table width="100%" cellspacing="0" cellpadding="0" border="0">
+
+														<tr>
+
+															<td align="center"><span class="body1"><b>Don't have a RealNetworks account?</b></span><br>
+
+																<img src="images/spacer.gif" width="5" height="3" alt=""><br>
+
+																<input type="submit" name="NeedAName" value="Create New Account" class="submitbutton"> <!--<INPUT TYPE="image" NAME="submit" src="images/back_generic.gif" width="82" height="27" border="0" alt="Submit"> <br><br>--></td>
+
+														</tr>
+
+													</table>
+
+													</form>
+
+													<!----------------------------END OF INNER CONTENT------------------------------------------></td>
+
+											</tr>
+
+										</table>
+
+
+									</td>
+
+								</tr>
+
+								<!----- END OF DON'T HAVE AN ACCOUNT BOX ----->
+
+							</table>
+
+						</td>
+
+					</tr>
+
+				</table>
+				<br/>
+
+			</td>
+
+			<!----------------------------------------- END OF UPPER RIGHT SECTION ------------------------------------->
+
+
+			
+
+			<td width="100%"></td>
+
+		</tr>
+
+		<tr>
+
+			<td colspan="2" valign="top" bgcolor="#555555"><img src="images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+
+		</tr>
+
+
+		<!----------------------------------------- BEGINNING OF GAME HELP SECTION ------------------------------------->
+
+		<tr>
+
+			<td colspan="2" valign="top">
+
+				<table width="100%" cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+
+						<td bgcolor="white" width="5" nowrap><img src="images/spacer.gif" width="5" height="5" alt="" border="0"></td>
+
+						<td valign="top">
+
+							<table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+								<tr>
+
+									<td><img src="images/spacer.gif" width="1" height="5" alt=""></td>
+
+								</tr>
+
+								<tr>
+
+									<td align="left" valign="top" width="100%">
+
+										<p class="heading1">GAME HELP</p>
+
+									</td>
+
+								</tr>
+
+								<tr>
+
+									<td colspan="2"><img src="images/spacer.gif" width="100" height="5" alt=""></td>
+
+								</tr>
+
+								<tr>
+
+									<td colspan="2" valign="top" class="body1">
+
+
+<!--http://switchboard.real.com/arcade/sites.html?ID=521  -->
+										<p><a href="http://switchboard.real.com/arcade/sites.html?ID=521" class="body1">RealArcade Message Boards</a><br>
+
+											Looking for hints, tips and other game help?  Join the active discussions on the RealArcade message boards where players just like you are helping each other out.</p>
+
+							
+
+									</td>
+
+								</tr>
+
+							</table>
+
+						</td>
+
+					</tr>
+
+				</table>
+
+			</td>
+
+		</tr>
+
+		<!----------------------------------------- END OF GAME HELP SECTION ------------------------------------->
+		
+		
+		
+
+		<tr>
+
+			<td colspan="2" valign="top" bgcolor="white"><img src="images/spacer.gif" width="5" height="10" alt="" border="0"></td>
+
+		</tr>
+
+		<tr>
+
+			<td colspan="2" valign="top" bgcolor="#555555"><img src="images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+
+		</tr>	
+
+		<!----------------------------------------- BEGINNING OF UPDATES SECTION ------------------------------------->
+
+		<tr>
+
+			<td colspan="2" valign="top">
+
+				<table width="100%" cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+
+						<td bgcolor="white" width="5" nowrap><img src="images/spacer.gif" width="5" height="5" alt="" border="0"></td>
+
+						<td valign="top">
+
+							<table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+								<tr>
+
+									<td><img src="images/spacer.gif" width="1" height="5" alt=""></td>
+
+								</tr>
+
+								<tr>
+
+									<td align="left" valign="top" width="100%">
+
+										<p class="heading1">GAME UPDATES</p>
+
+									</td>
+
+								</tr>
+
+								<tr>
+
+									<td colspan="2"><img src="images/spacer.gif" width="100" height="5" alt=""></td>
+
+								</tr>
+
+								<tr>
+
+									<td colspan="2" valign="top" class="body1">
+
+
+<!--http://switchboard.real.com/arcade/sites.html?ID=518  -->
+										<p><a href="http://switchboard.real.com/arcade/sites.html?ID=518" class="body1">Game Updates List</a><br>
+
+											Get information on the latest updates to the games in our catalog - as well as info on how to update your game</p>
+
+							
+
+									</td>
+
+								</tr>
+
+							</table>
+
+						</td>
+
+					</tr>
+
+				</table>
+
+			</td>
+
+		</tr>
+
+		<!----------------------------------------- END OF UPDATES SECTION ------------------------------------->
+		
+		
+		
+
+		<tr>
+
+			<td colspan="2" valign="top" bgcolor="white"><img src="images/spacer.gif" width="5" height="10" alt="" border="0"></td>
+
+		</tr>
+
+		<tr>
+
+			<td colspan="2" valign="top" bgcolor="#555555"><img src="images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+
+		</tr>
+		
+		<!----------------------------------------- BEGINNING OF TECHNICAL SUPPORT SECTION ------------------------------------->
+
+		<tr>
+
+			<td colspan="2" valign="top">
+
+				<table width="100%" cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+
+						<td bgcolor="white" width="5" nowrap><img src="images/spacer.gif" width="5" height="5" alt="" border="0"></td>
+
+						<td valign="top">
+
+							<table id="cs_link" style="display:none" width="100%" border="0" cellpadding="0" cellspacing="0">
+								<tr>
+									<td><img src="images/spacer.gif" width="1" height="5" alt=""></td>
+								</tr>
+								<tr>
+									<td align="left" valign="top" width="100%">
+										<p class="heading1">CUSTOMER SERVICE</p>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2"><img src="images/spacer.gif" width="100" height="5" alt=""></td>
+								</tr>
+
+								<tr>
+									<td colspan="2" valign="top" class="body1">
+										<p><a id="customerServiceLink" href="http://switchboard.real.com/arcade/sites.html?ID=500" target="_blank" class="body1">Contact Customer Service</a><br>
+
+											Get help with purchases or GamePass.  Address a technical problem with RealArcade or a game.</p>
+									</td>
+								</tr>
+							</table>
+<!-- Terry, Localize the text in this table only -->
+							<table id="jp_cslink" style="display:none" width="100%" border="0" cellpadding="0" cellspacing="0">
+								<tr>
+									<td><img src="images/spacer.gif" width="1" height="5" alt=""></td>
+								</tr>
+								<tr>
+									<td align="left" valign="top" width="100%">
+										<p class="heading1">CUSTOMER SERVICE</p>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2"><img src="images/spacer.gif" width="100" height="5" alt=""></td>
+								</tr>
+								<tr>
+									<td colspan="2" valign="top" class="body1">
+										<p><a href="http://japan.real.com/guide/pages/games/support.html" class="body1">Contact Customer Service</a><br>
+
+											Get help with purchases or GamePass.  Address a technical problem with RealArcade or a game.</p>
+									</td>
+								</tr>
+							</table>
+<!-- End of JP localized text -->
+						</td>
+					</tr>
+				</table>
+
+			</td>
+
+		</tr>
+
+		<!----------------------------------------- END OF TECHNICAL SUPPORT SECTION ------------------------------------->
+		
+		<tr>
+
+			<td colspan="2" valign="top" bgcolor="white"><img src="images/spacer.gif" width="5" height="10" alt="" border="0"></td>
+
+		</tr>
+
+		<tr>
+
+			<td colspan="2" valign="top" bgcolor="#555555"><img src="images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+
+		</tr>
+
+		<!----------------------------------------- BEGINNING OF TALK TO US SECTION ------------------------------------->
+
+		<tr>
+
+			<td colspan="2" valign="top">
+
+				<table width="100%" cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+
+						<td bgcolor="white" width="5" nowrap><img src="images/spacer.gif" width="5" height="5" alt="" border="0"></td>
+
+						<td valign="top">
+
+							<table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+								<tr>
+
+									<td><img src="images/spacer.gif" width="1" height="5" alt=""></td>
+
+								</tr>
+
+								<tr>
+
+									<td align="left" valign="top" width="100%">
+
+										<p class="heading1">TALK TO US!</p>
+
+									</td>
+
+								</tr>
+
+								<tr>
+
+									<td colspan="2"><img src="images/spacer.gif" width="100" height="5" alt=""></td>
+
+								</tr>
+
+								<tr>
+
+									<td colspan="2" valign="top">
+
+										<p class="body1">We value your feedback on what you like, and what you think needs improvement.<br>
+
+											Please <a href="landing.htm" class="body1" target="_blank">Click here</a> to fill out a survey about RealArcade.</p>
+
+									</td>
+
+								</tr>
+
+							</table>
+
+						</td>
+
+					</tr>
+
+				</table>
+
+			</td>
+
+		</tr>
+
+		<!----------------------------------------- END OF TALK TO US SECTION ------------------------------------->
+
+		<tr>
+
+			<td colspan="2" valign="top" bgcolor="white"><img src="images/spacer.gif" width="5" height="10" alt="" border="0"></td>
+
+		</tr>
+
+		<tr>
+
+			<td colspan="2" valign="top" bgcolor="#555555"><img src="images/spacer.gif" width="5" height="1" alt="" border="0"></td>
+
+		</tr>
+
+		<!----------------------------------------- BEGINNING OF GAME DEVELOPER SECTION ------------------------------------->
+
+		<tr>
+
+			<td colspan="2" valign="top">
+
+				<table width="100%" cellspacing="0" cellpadding="0" border="0">
+
+					<tr>
+
+						<td bgcolor="white" width="5" nowrap><img src="images/spacer.gif" width="5" height="5" alt="" border="0"></td>
+
+						<td valign="top">
+
+							<table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+								<tr>
+
+									<td><img src="images/spacer.gif" width="1" height="5" alt=""></td>
+
+								</tr>
+
+								<tr>
+
+									<td align="left" valign="top" width="100%">
+
+										<p class="heading1">ARE YOU A GAME DEVELOPER?</p>
+
+									</td>
+
+								</tr>
+
+								<tr>
+
+									<td colspan="2"><img src="images/spacer.gif" width="100" height="5" alt=""></td>
+
+								</tr>
+
+								<tr>
+
+									<td colspan="2" valign="top">
+
+										<p class="body1">Find out how to submit your game to RealArcade.<br>
+
+											<a href="http://gamedevs.realarcade.com" class="body1" target="_blank">Click here</a> for more info.</p><br><br><br><br><br><br><br><br><br><br><br><br>
+
+									</td>
+
+								</tr>
+
+							</table>
+
+						</td>
+
+					</tr>
+
+				</table>
+
+			</td>
+
+		</tr>
+
+		<!----------------------------------------- END OF TALK TO US SECTION ------------------------------------->
+
+
+
+
+
+	</table>
+
+</body>
+
+<script langauge="JavaScript">
+    //strRNGCDistCode = 'W2C0';
+	if ( strRNGCDistCode == 'W2C0' ) {
+		 document.all['gamepass_content_table'].style.visibility = "hidden";
+		 document.all['gamepass_content_table'].style.display = "none";
+		 document.all['comcast_content_table'].style.visibility = "visible";
+		 document.all['comcast_content_table'].style.display = "block";
+	} else {
+		 document.all['gamepass_content_table'].style.visibility = "visible";
+		 document.all['gamepass_content_table'].style.display = "block";
+		 document.all['comcast_content_table'].style.visibility = "hidden";
+		 document.all['comcast_content_table'].style.display = "none";
+	}
+	 
+if ( strRNGCDistCode == 'W4C0' ) {
+	document.all['jp_cslink'].style.display = "block";
+} else {
+	document.all['cs_link'].style.display = "block";
+}
+</script>
+
+</html>

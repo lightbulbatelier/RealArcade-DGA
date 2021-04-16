@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"x>
+
+<html>
+
+	<head>
+		<title>Please Wait</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<link rel="stylesheet" href="newstyles.css">
+		<script language="JavaScript">
+
+<!--
+
+
+
+//enter in URL after the slahes
+
+var jumpLoc = '#DEST_URL#';
+
+
+
+function jump()
+
+{
+
+  window.navigate(jumpLoc, 'spawnedWindow', 'toolbar=1,location=1,status=1,menubar=1,scrollbars=1,resizable=1');
+
+}
+
+
+
+function startjump()
+
+{
+
+//enter in time interval in milliseconds
+
+    jumptime = setTimeout("jump()",0);
+
+}
+
+//-->
+
+</script>
+	</head>
+
+	<body bgcolor="white" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" class="content" onload="startjump();">
+		
+		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td width="100%" colspan="3">
+					<table cellspacing="0" cellpadding="0" border="0" width="100%" class="topheader">
+						<tr>
+							<td width="100%" align="left" valign="center" nowrap><span class="pagetitle"><img src="images/pleasewait_hourglass.gif" width="15" height="14" alt="" border="0"> Connecting to the Internet</span></td>
+							<td width="1" valign="top" align="right" class="topheader"><img src="images/spacer.gif" width="1" height="30" border="0" alt=""></td>
+							<td width="300" rowspan="1" bgcolor="#D6D7D6" align="right"></td>
+						</tr>
+						<tr>
+							<td bgcolor="#D6D7D6" colspan="3"><img src="images/spacer.gif" width="1" height="5" border="0" alt=""></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td width="-1%" valign="top">
+					<table border="0" cellpadding="0" cellspacing="0" width="100%">
+						<tr>
+							<td colspan="5" bgcolor="white" width="100%"><img src="images/spacer.gif" width="5" height="5" alt=""></td>
+						</tr>
+						<tr>
+							<td colspan="5">
+								<table width="100%" border="0" cellpadding="0" cellspacing="0">
+									<tr>
+										<td width="5" bgcolor="white"><img src="images/spacer.gif" width="5" height="5" alt=""></td>
+										<td width="-1%" valign="top" colspan="3">
+											<p class="heading1">Please Wait...</p>
+											<p class="body1"><b>Arcade is connecting to the Internet</b></p>
+											<p class="body1">This may take a few seconds</p>
+										</td>
+										<td width="5" bgcolor="white"><img src="images/spacer.gif" width="5" height="5" alt=""></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<iframe src="http://switchboard.real.com/arcade/download.html?file=online/gotoweb.gif" width="1" height="1"></iframe>
+	</body>
+
+</html>

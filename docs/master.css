@@ -1,0 +1,368 @@
+.title {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	color:#000000;
+}
+
+.body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+	line-height:14px;
+	color:#3B4247;
+	padding-left : 8px;
+	padding-right : 8px;
+	text-decoration: none;
+}
+.body:hover {color: #FFFFFF; text-decoration: none;}
+
+.header {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+	color:#467799;
+	padding-left : 8px;
+}
+
+.table {
+	background-color: #81B6B6;
+	padding : 0;
+	border : 0;
+	width : 100%;
+	margin : 0;
+}
+
+.pageTitle {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	color:#FFFFFF;
+	font-weight: bold;
+	vertical-align: bottom;
+	padding-bottom: 5px;
+	padding-left : 5px;
+
+}
+
+.date {
+	font-family: verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	padding-bottom: 5px;
+	color:#000000;
+}
+
+.content{
+	padding-top : 15px;
+	padding-bottom : 13px;
+	padding-left : 13px;
+	padding-right : 13px;
+}
+
+.topStoryHeader {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+	color:#000000;
+	height: 18;
+	font-weight: bold;
+	text-decoration: none;
+}
+.topStoryHeader:hover {color: #BDD0F3; text-decoration: none;}
+
+.topStoryDetailHeader {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+	line-height:13px;
+	color:#000000;
+	padding-left : 8px;
+	padding-right : 8px;
+	padding-top : 4px;
+	padding-bottom : 4px;
+	font-weight : bold;
+}
+
+.topStoryBody {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+	line-height:14px;
+	color:#000000;
+}
+.topStoryLink {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 8.5pt;
+	line-height:14px;
+	color:#123AAE;
+	text-decoration: none;
+}
+.topStoryLink:hover {color: #BDD0F3; text-decoration: none;}
+
+.featureHeader {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	padding-left : 5px;
+	padding-right : 5px;
+	height : 20;
+	background-image : url(images/gameGuide_featureTile.gif);
+}
+
+.featureBody {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+	color:#000000;
+	line-height:14px;
+}
+
+.featureLink {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-weight : bold;
+	font-size: 8pt;
+	color:#000000;
+	text-decoration: none;
+}
+.featureLink:hover {color: #666666; text-decoration: none;}
+
+.reviewHeader {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+	color:#000000;
+	text-decoration: none;
+	font-weight: bold;
+	padding-left : 5px;
+	padding-right : 5px;
+	height : 18;
+	background-image : url(images/gameGuide_reviewTile.gif);
+}
+.reviewHeader:hover {color: #BDD0F3; text-decoration: none;}
+
+.reviewBody {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+	color:#000000;
+}
+
+.reviewText {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+	color:#383737;
+}
+
+.sideBarBody {  
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+	vertical-align : top;
+	color:#383737;
+	text-decoration: none;
+	padding-right : 3px;
+	padding-bottom : 2px;
+}
+.sideBarBody:hover {color: #BDD0F3; text-decoration: none;}
+
+.sideBar_releasesLink {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+	color:#383737;
+	text-decoration: none;
+
+}
+.sideBar_releasesLink:hover {color: #0C8FB9; text-decoration: none;}
+
+.sideBar_topLink {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+	color:#383737;
+	text-decoration: none;
+}
+.sideBar_topLink:hover {color: #E8680A; text-decoration: none;}
+
+
+
+.sideBarWeek {  
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 7pt;
+	color:#5F5E5E;
+}
+
+.sideBarStar {  
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 5pt;
+	color:#F006A1;
+}
+
+.sideBarHeader {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	line-height:12px;
+	color:#000000;
+	vertical-align : bottom;
+	padding-left: 6px;
+	padding-right: 5px;
+	padding-bottom: 1px;
+	background-image : url(images/gameGuide_topListTile.gif);
+	text-decoration: none;
+}
+.sideBarHeader:hover {color: #E8680A; text-decoration: none;}
+
+.sideBarHeaderUnselected {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	vertical-align : bottom;
+	line-height:12px;
+	padding-left: 6px;
+	padding-right: 5px;
+	padding-bottom: 1px;
+	color:#000000;
+	background-image : url(images/gameGuide_topListUnselectedTile.gif);
+	text-decoration: none;
+}
+.sideBarHeaderUnselected:hover {color: #E8680A; text-decoration: none;}
+
+.red {
+	color:#FD0606;
+	font-weight : normal;
+}
+
+.blue {
+	color:#0C8FB9;
+	font-weight : normal;
+}
+.green {
+	color:#009900;
+	font-weight : normal;
+}
+.pink{
+	color:#F006A1;
+	font-weight : normal;
+}
+.orange{
+	color:#E8680A;
+	font-weight : normal;
+}
+
+.webGames {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+	line-height:14px;
+	color:#000000;
+	text-decoration: none;
+	padding-bottom: 15px;
+}
+.webGames:link {color:#283FA7; text-decoration: none;}
+.webGames:visited {color:#666666; text-decoration: none;}
+.webGames:hover {color: #9DAFCC; text-decoration: none;}
+
+.webGamesBold {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+	line-height:12px;
+	color: #000000;
+	font-weight : bold;
+}
+
+.webGamesTitles {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+	line-height:12px;
+	color: #283FA7;
+}
+
+.myAccountTitle {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	line-height: 15px;
+	color: #FFFFFF;
+	font-weight: bold;
+	background-color: #78869c;
+	padding-right : 8px;
+}
+
+.myAccountLogin {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	line-height: 15px;
+	color: #000000;
+	font-weight: bold;
+	padding-right : 8px;
+	background-color: #EAEAEA;
+}
+
+.myAccountBody {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	line-height: 15px;
+	color:#000000;
+}
+.myAccountText {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	color:#333333;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+.myAccountLink {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	line-height: 15px;
+	color: #525A91;
+	padding-right: 10px;
+	padding-left: 10px;
+	text-decoration: none;
+}
+.myAccountLink:hover {color: #9DAFCC; text-decoration: none;}
+
+.myAccountSignUp {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	line-height: 15px;
+	color: #000000;
+	padding-right: 8px;
+	padding-left: 12px;
+}
+
+.myAccountSignUpBold {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	line-height: 15px;
+	color: #006699;
+	padding-right: 8px;
+	padding-left: 12px;
+	font-weight: bold;
+}
+
+.myAccountSignUpBold2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	line-height: 15px;
+	color: #000000;
+	padding-right: 8px;
+	padding-left: 12px;
+	font-weight: bold;
+}
+
+.myAccountFields {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 7pt;		
+}
+
+.butt404  {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+	line-height:12px;
+	color:#0D27C7;
+	padding-left : 8px;
+	padding-right : 8px;
+	text-decoration: none;
+}
+.butt404:hover {color: #FFFFFF; text-decoration: none;}
+
+.pageTitle404 {
+	font-family: Lucida Sans Unicode, Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	color:#033391;
+	padding-left : 8px;
+	letter-spacing : 10;
+}
+
+.TellFriend_pageTitle {
+	font-family: Lucida Sans Unicode, Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	color:#033391;
+	padding-left : 5px;
+	letter-spacing : 10;
+}
