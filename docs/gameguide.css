@@ -1,0 +1,352 @@
+
+.content { 
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	text-decoration: none;
+	padding-bottom: 30px
+}
+
+body {  scrollbar-face-color:  #D4D0C8;
+		scrollbar-shadow-color: #D4D0C8;
+		scrollbar-highlight-color: #D4D0C8;
+		scrollbar-3dlight-color: #FCFCFC;
+		scrollbar-darkshadow-color: #404040;
+		scrollbar-track-color: #ecebed;
+		scrollbar-arrow-color: #000000;
+}
+
+.updatenews {
+	padding-bottom: 1px;
+	background-image : url(images/updatenews_butttile.gif)
+}
+
+.updatenewslink {	
+	font-size: 8pt;
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;
+	}
+.updatenewslink:hover { text-decoration: none; color: #0858DC; }
+
+.title {
+	font-size: 8pt;
+	font-weight: bold;
+	color:#122642;
+	height: 31px;
+	width: 176px;
+	padding-left: 35px;
+	padding-top: 2px;
+	background-image : url(images/gameguide_ql_header.gif);
+}
+
+.firstrun_framemargin {
+	font-size: 8pt;
+	background-image : url(images/firstrun_framemiddletile.gif);
+	padding-top: 2px;
+	padding-left: 8px;
+	padding-right: 8px;
+	font-color: #1F2124;
+}
+
+.firstRun_body {
+	padding-top: 4px;
+	padding-left: 16px;
+	font-size: 8pt;
+	font-color: #1F2124;
+}
+
+.hand {
+cursor: hand
+}
+
+.body {
+	background-color: #C5CBCC;
+	padding-left : 8px;
+	padding-right : 8px;
+	background-image : url(images/gameguide_ql_sectiontile.gif);
+}
+
+.qlinks {
+    font-size: 8pt;
+	line-height:14px;
+	color:#314357;
+	text-decoration: none;
+}
+.qlinks:hover {color: #0858DC; text-decoration: none;}
+
+.header {
+    font-size: 7pt;
+	letter-spacing : 1;
+	font-weight: bold;
+	color:#2A2832;
+	padding-left : 8px;
+	height: 15;
+}
+
+.qheaderlink {
+	color:#000033;
+	font-size: 8pt;
+	text-decoration: none; 
+}
+.qheaderlink:hover {	text-decoration: none; color: #0858DC;  }
+
+.qfooter { 
+	font-size: 8pt;
+	padding-left : 48px;
+	padding-right: 24px;
+	padding-top: 11px;
+	height: 51;
+	background-image : url(images/gameguide_ql_findgamebutt.gif);
+}
+.qfooterlink {
+	color:#2A2832;
+	font-weight: bold;
+	line-height: 12px;
+	text-decoration: none; 
+}
+.qfooterlink:hover {text-decoration: none; color: #0858DC;  }
+
+
+.topheader { 
+	background-color: #5EA3D1; 
+	height: 23;
+	padding-right: 6px;  
+}
+
+.pagetitle {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	color: #013151;
+	font-weight: bold;
+	padding-left: 5px
+}
+
+.updated {
+	font-size: 8pt;
+	font-weight: bold;
+	color: #013151;
+	padding-top: 3px;
+}
+
+.update {
+	font-size: 8pt;
+	color: #013151;
+	padding-top: 2px;
+	text-decoration: none;
+}
+.update:hover {color: #FFFFFF; text-decoration: none;}
+
+.date {
+	font-size: 8pt;
+	font-weight: normal;
+	color: #FFFFFF;
+	padding-bottom: 3px;
+}
+
+.table {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+}
+
+.table3 {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	margin-left: 6px;
+}
+
+.table2 {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	padding-bottom: 30px;
+}
+
+.feature_maintitlearea {
+	background-image : url(images/gameGuide_featureTitleArea.gif);
+	font-weight: bold;
+	padding-left: 10px;
+}
+
+.feature_mainbody {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	color: #1F2124;
+	background-color: #B9C0C8;
+}
+
+.feature_mainlink {
+	background-image : url(images/gameguide_linkareatile.gif);
+	padding-right: 10px;
+}
+
+.subfeaturetable {
+	font-size: 8pt;
+}
+
+.subfeature_titlearea {
+	background-image : url(images/gameguide_subfeaturetitlearea.gif);
+	font-weight: bold;
+	padding-left: 3px;
+}
+
+.subfeature_mainbody {
+	padding-right: 10px;
+	padding-left: 3px;
+	padding-top: 3px;
+	color: #1F2124;
+	background-color: #A8ADB3;
+}
+
+.sidepanelheader {
+	color: #C64600;
+}
+
+.sidepanelbody {
+	font-size: 8pt;
+	padding-top: 10px;
+	padding-right: 8px;
+	padding-left: 5px;
+	padding-bottom: 10px;
+}
+
+.sidepaneltext {
+	color: #2C3641;
+}
+
+.listlinkarea {
+	padding-left: 3;
+	padding-right: 2
+}
+
+
+.listheaderselected {
+	text-align: left;
+	color: #000000;
+	font-size: 8pt;
+	background-color: #92A7B0;
+	padding-right: 2;
+}
+
+.listheader {
+			text-align: left;
+			color: #E3E4E4;
+			font-size: 8pt;
+			background-image: url(images/gameguide_listheaderrtile.gif);
+			padding-right: 2;
+			}			
+.liststripe    {
+			background-color: #84979F;
+			}
+.listweek {	
+			text-align: left;
+			color: #253342;
+			font-size: 7pt;
+			padding-top: 5;
+			padding-bottom: 5;
+			}	
+.listlink {
+			text-align: left;
+			color: #1F2124;
+			font-size: 8pt;
+			text-decoration: none;
+			}
+.listlink:hover {color: #0858DC; text-decoration: none;}
+.linkfindgames:visited { text-decoration: none; color: #666666; }
+
+.listnum {
+			text-align: left;
+			color: #BF3F07;
+			font-size: 8pt;
+			text-decoration: none;
+			}
+.listnum2 {
+			text-align: left;
+			color: #2520D1;
+			font-size: 8pt;
+			text-decoration: none;
+			}			
+			
+.listheaderlink {
+			color: #ECEDED;
+			font-size: 8pt;
+			text-decoration: none;
+			}
+.listheaderlink:hover {color: #FFFFFF; text-decoration: none;}
+
+.reviewheaderarea {
+	background-image : url(images/gameguide_reviewtitlearea.gif);
+	font-weight: bold;
+	padding-left: 3px;
+} 
+
+.reviewlinkarea {
+	background-color: #C6D0D0;
+	color: #0E51A4;
+	padding-left: 3px;
+} 
+
+.reviewtext { 
+	color: #1F2124;
+	font-size: 8pt;
+	background-color: #A8ADB3; 
+	padding-left: 10;
+	padding-top: 5;
+	padding-right: 10;
+	padding-bottom: 8;
+}
+
+
+.linkboxesp5 {
+	font-size: 8pt;
+	background-image: url(images/gameguide_linkareatile.gif);
+	height: 23px;
+	padding-left: 16;
+	}
+
+
+.link {
+	color: #122442;
+	font-size: 8pt;
+}
+.link:link {  color: #122442;  }
+.link:hover {  color: #0858DC; } 
+
+.yellow {
+	color: #FFFF00;
+	font-weight: normal;
+}
+
+.red {
+	color: #CC0033;
+}
+	
+.red2 {
+	color: #CC0000;
+	font-weight: normal;
+}
+
+.featurelink {
+	color: #000033;
+	font-size: 8pt;
+}
+.featurelink:hover {  color: #0858DC; } 
+
+
+.blue {
+	color: #3333FF;
+}
+
+.subfeaturelink {
+	color: #000033;
+	font-size: 8pt;
+}
+.subfeaturelink:hover {  color: #0858DC; } 
+
+
+.blk2 {
+	color: #000000;
+	font-weight: normal;
+}
+
+

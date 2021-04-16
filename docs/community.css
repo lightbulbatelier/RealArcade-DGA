@@ -1,0 +1,167 @@
+.content { 
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	padding-bottom: 30px;
+}
+
+.gamecomm_featuretitlearea {
+	background-image : url(images/gamecomm_featureheadertile.gif);
+	font-weight: bold;
+	padding-left: 3px;
+}
+
+.mb_rr_table {
+	font-size: 8pt;
+}
+
+.mb_rr_headertext {
+	color: #393838;
+	padding-left: 9px; 
+}
+
+.mbheader {
+	font-weight: bold;
+	padding-left: 5px; 
+	color: #0066CC;
+	background-image: url(images/gamecomm_mbheadertile.gif);
+	
+}
+
+.mbsubheader {
+	padding-left: 9px;
+	color: #0066CC;
+	padding-top: 15px;
+}
+
+.mbsectiontext  {
+	padding-left: 9px;
+	font-weight: bold;
+	color: #0066CC;
+	padding-top: 15px;
+}
+
+.gametitle {
+	padding-left: 9px;
+	padding-top: 5px;
+}
+
+.gametitle2 {
+	padding-left: 9px;
+}
+
+.commlinks {
+	color: #000000;
+	font-weight: bold;
+	font-size: 8pt;
+}
+.commlinks:hover {  color: #0858DC; } 
+
+
+.gametitledesc {
+	padding-left: 21px;
+	color: 445460;
+	font-size: 7pt;
+}
+
+.rrheader {
+	font-weight: bold;
+	padding-left: 5px; 
+	color: #32481C;
+	background-image: url(images/gamecomm_rrheadertile.gif);
+}
+
+.rrsubheader {
+	padding-left: 9px;
+	color: #53670F;
+	padding-top: 15px;
+	padding-bottom: 5px;
+}
+
+.rrsectiontext {
+	padding-left: 9px;
+	font-weight: bold;
+	color: #53670F;
+	padding-top: 15px;
+}
+
+
+.rrgames {
+	padding-left: 9px;
+}
+
+.pmheader {
+	font-weight: bold;
+	color:#012149;
+	width: 176px;
+	padding-top: 2px;
+	padding-left: 8px;
+	padding-right: 2px;
+	background-color: #C6CCD2;
+	background-image: url(images/gamecomm_mpm_sectiontile.gif);
+}
+
+.pmtable {
+	font-size: 8pt
+}
+
+.pmsection {
+	padding-top: 3px;
+	padding-bottom: 2px;
+	padding-left: 8px;
+	padding-right: 2px;
+	background-color: #C6CCD2;
+	background-image: url(images/gamecomm_mpm_sectiontile.gif);
+}
+
+.pmsection2 {
+	color:#46515E;
+	font-size: 7pt;
+	padding-bottom: 1px;
+	padding-left: 8px;
+	padding-right: 2px;
+	background-color: #C6CCD2;
+	background-image: url(images/gamecomm_mpm_sectiontile.gif);
+}
+
+.pmgap {
+	color:#012149;
+	padding-top: 3px;
+	padding-bottom: 2px;
+	font-weight: bold;
+	padding-left: 8px;
+	padding-right: 2px;
+	background-color: #95B3C2;
+	background-image: url(images/gamecomm_mpm_sectiontile.gif);
+}
+
+.pmlinks {
+	color:#1F2833;
+	text-decoration: none;
+	
+}
+.pmlinks:hover {text-decoration: none;  color: #0858DC; } 
+
+.gamespy 	{
+	font-size: 7pt;
+	color:#1F2833;
+	font-weight: normal;
+}
+
+.gamespyplanet  {
+	font-size: 8pt;
+	padding-top: 15px;
+	padding-left: 6px;
+	font-weight: normal;
+}
+
+.spylinks {
+	color:#1F2833;
+	
+}
+.spylinks:hover {color: #0858DC; } 
+
+.sectioncaption 	{
+	font-size: 7pt;
+	color:#46515E;
+	font-weight: normal;
+}

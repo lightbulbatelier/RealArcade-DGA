@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<script src="exclusion.js"></script>
+</head>
+<body>
+<object id="RNGCIEPLUG" width="0" height="0" classid="CLSID:A5DC33CE-214B-4c26-8596-8A45456C9EB8"></object>
+
+
+
+<script language="javascript">
+	var distCode = RNGCIEPLUG.RealArcadeDistCode;
+	
+	//***************
+	
+		//true = migration lockout ad
+		var D2Cmigration_on = true;
+		
+	//***************
+
+	//show the migration ad only for list of US rnwk or acquisition channel tps's	
+	if (distCodeInList(RNGCIEPLUG.RealArcadeDistCode, migrationAd_Inclusions) && D2Cmigration_on == true) {
+		document.location = './finalMigrationAd2.htm';
+	}	
+	else if ( distCode == 'W510' ) {
+		window.location ='gamepassTrial.htm';
+	}
+	else {
+		window.location ='gamepass2fg.htm';
+	}	
+</script>
+</body>
+</html>
