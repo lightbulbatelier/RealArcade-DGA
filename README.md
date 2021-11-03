@@ -1,13 +1,20 @@
-<p align="center"><img width="360" height="360" src="https://ia801706.us.archive.org/30/items/com.real.arcade/Medal_Acronym.png"></p>
+<p align="center"><img width="360" height="360" src="https://ia801706.us.archive.org/30/items/com.real.arcade/Medal_Acronym.png">
+(Graphics subject to change)</p>
 
-# Welcome to the RealArcade Games Preservation Project!
+# Welcome to the RealArcade Digital Games Archive!
 
-This archive contains an important amount of games that were released by the now defunct RealArcade (RealOne Arcade) service provider, one of the most influential games distributor during the golden age of the Web Games, right before the rise of the Mobile Gaming era started with the very first iPhone.
+This archive contains an important amount of games (but not all) that were released by the now defunct RealArcade (RealOne Arcade) service provider, one of the most influential game distributors during the golden age of the Web Games, right before the rise of the Mobile Gaming with the very first iPhone.
+
+Here we are at your service, 24/7. Whenever you need it. No need to tune in 93.11FM ;)
 
 
 ### Status
 
-The list is a far incomplete, work-in-progress effort made by volunteers, albeit it is a good starting point for unifying all possible RealArcade setup files around the net and physical media. 231 games have been preserved here for historical purposes as of December 30th, 2020.
+This repository is not in sync neither with the official RealArcade Digital Games Archive nor the RealArcade Games Preservation Project (RGPP). The main utility of this repo is to host the client installers that are not allowed by Internet Archive per Terms of Use, specifically related to bundleware detections by its antivirus.
+
+Bundleware is not the same as virus. Just note the presence of Google Toolbar installers. Those can't be removed unfortunately. The approach is to be as precise as possible with the files we provide to the public.
+
+For updated gamelists, please visit https://archive.org/details/com.real.arcade
 
 
 ### About RGS installer files
@@ -27,16 +34,19 @@ Any legal agreement between the user and the game developer should still be resp
 
 ### Acknowledgements
 
-The RealArcade Games Preservation Project was made possible thanks to Bowlerb, Dani (darxori), Marli, HMVocaloid, MatthewH12 and Nicolas Bahamondes. Our voluntary contribution will help on preserving the digital heritage of the self-proclaimed Age of Downloadable Web Games (1998-2008).
+The RealArcade Digital Games Archive is possible thanks to the contributions of the following members of the RealArcade Games Preservation Project: AskaLangly, Bowlerb, Dani (darxori), Marli, MatthewH12 and Nicolas Bahamondes. Our voluntary contribution will help on preserving the digital heritage of the self-proclaimed Age of Downloadable Web Games (1998-2008). To all those guys, thank you very much.
 
 
 ### Contributions
 
-You can contribute to this archive by sending any links to RGS files to the official Discord group for uploads and discussions related to the RealArcade Games Preservation Project. We are located at https://discord.gg/8CAu3NBbMt
+As always, you can contribute to the archive by sending any links to RGS files to me at Reddit. You can find me at /u/NicolasBahamondes. Alternatively, you can follow the official RGPP Discord group at https://discord.gg/8CAu3NBbMt. There you can discuss with others about RealArcade and its former games. The conversation never stops at the /r/realarcade Reddit group.
+
+You need another mirror? Visit the RGPP's official mirror at https://archive.org/details/realrcade-games-preservation-project. Just ignore that "I am defunct" part. ;)
 
 
  
  
  
 
-##### (C) 1998-2021 RealNetworks, Inc. Real, the RealNetworks logo, RealArcade and GameHouse are trademarks of RealNetworks, Inc. All Rights Reserved.
+##### (C) 1998-2022 RealNetworks, Inc. Real, the RealNetworks logo, RealArcade and GameHouse are trademarks of RealNetworks, Inc. All Rights Reserved.
+##### (M) 2014-2022 LIGHTBULB Atelier. LIGHTBULB Atelier, the Legacy Archive icon, the LIGHTBULB icon and all related media are exclusive trademarks of Nicolas Bahamondes. All Rights Reserved. Use under permission for the com.real.arcade identifier.
